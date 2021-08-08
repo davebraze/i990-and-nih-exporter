@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Return xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.irs.gov/efile" returnVersion="2018v3.1">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2019-07-31T08:13:20-05:00</ReturnTs>
+    <TaxPeriodEndDt>2018-12-31</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmEIN>060530830</PreparerFirmEIN>
+      <PreparerFirmName>
+        <BusinessNameLine1Txt>SEWARD AND MONDE CPA'S</BusinessNameLine1Txt>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1Txt>296 STATE STREET</AddressLine1Txt>
+        <CityNm>NORTH HAVEN</CityNm>
+        <StateAbbreviationCd>CT</StateAbbreviationCd>
+        <ZIPCd>064732165</ZIPCd>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990</ReturnTypeCd>
+    <TaxPeriodBeginDt>2018-01-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>131628174</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>HASKINS LABORATORIES INC</BusinessNameLine1Txt>
+      </BusinessName>
+      <BusinessNameControlTxt>HASK</BusinessNameControlTxt>
+      <PhoneNum>2038656163</PhoneNum>
+      <USAddress>
+        <AddressLine1Txt>300 GEORGE STREET</AddressLine1Txt>
+        <CityNm>NEW HAVEN</CityNm>
+        <StateAbbreviationCd>CT</StateAbbreviationCd>
+        <ZIPCd>06511</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>JOSEPH P CARDONE</PersonNm>
+      <PersonTitleTxt>VP FINANCE AND ADMIN</PersonTitleTxt>
+      <PhoneNum>2038656163</PhoneNum>
+      <SignatureDt>2019-07-22</SignatureDt>
+    </BusinessOfficerGrp>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>GAYLE A CARBONE</PreparerPersonNm>
+      <PTIN>P01010777</PTIN>
+      <PhoneNum>2032489341</PhoneNum>
+    </PreparerPersonGrp>
+    <FilingSecurityInformation>
+      <IPAddress>
+        <IPv4AddressTxt>173.166.62.193</IPv4AddressTxt>
+      </IPAddress>
+      <IPDt>2019-07-22</IPDt>
+      <IPTm>07:47:01</IPTm>
+      <IPTimezoneCd>ED</IPTimezoneCd>
+      <FilingLicenseTypeCd>P</FilingLicenseTypeCd>
+      <AtSubmissionCreationDeviceId>41114BE78F9267D8857AD0643F4D09414A798F58</AtSubmissionCreationDeviceId>
+      <AtSubmissionFilingDeviceId>D6D028B83EC7BAE48696A0FE418AC7215527A94E</AtSubmissionFilingDeviceId>
+    </FilingSecurityInformation>
+    <TaxYr>2018</TaxYr>
+    <BuildTS>2019-02-21 02:37:17Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="9">
+    <IRS990 documentId="RetDoc1038000001" referenceDocumentId="RetDoc1044400001">
+      <PrincipalOfficerNm>JOSEPH P CARDONE</PrincipalOfficerNm>
+      <USAddress>
+        <AddressLine1Txt>300 GEORGE STREET</AddressLine1Txt>
+        <CityNm>NEW HAVEN</CityNm>
+        <StateAbbreviationCd>CT</StateAbbreviationCd>
+        <ZIPCd>06511</ZIPCd>
+      </USAddress>
+      <GrossReceiptsAmt>6723770</GrossReceiptsAmt>
+      <GroupReturnForAffiliatesInd>0</GroupReturnForAffiliatesInd>
+      <Organization501c3Ind>X</Organization501c3Ind>
+      <WebsiteAddressTxt>HASKINS.YALE.EDU</WebsiteAddressTxt>
+      <TypeOfOrganizationCorpInd>X</TypeOfOrganizationCorpInd>
+      <FormationYr>1935</FormationYr>
+      <LegalDomicileStateCd>NY</LegalDomicileStateCd>
+      <ActivityOrMissionDesc>HASKINS LABORATORIES IS AN INDEPENDENT, INTERNATIONAL, MULTIDISCIPLINARY COMMUNITY OF RESEARCHERS CONDUCTING BASIC RESEARCH ON SPOKEN AND WRITTEN LANGUAGE. EXCHANGING IDEAS, FOSTERING COLLABORATIONS, AND FORGING PARTNERSHIPS ACROSS THE SCIENCES, IT PRODUCES GROUNDBREAKING RESEARCH THAT ENHANCES OUR UNDERSTANDING OF, AND REVEALS WAYS TO IMPROVE OR REMEDIATE, SPEECH PERCEPTION AND PRODUCTION, READING AND READING DISABILITIES, AND HUMAN COMMUNICATION.</ActivityOrMissionDesc>
+      <VotingMembersGoverningBodyCnt>15</VotingMembersGoverningBodyCnt>
+      <VotingMembersIndependentCnt>14</VotingMembersIndependentCnt>
+      <TotalEmployeeCnt>85</TotalEmployeeCnt>
+      <TotalVolunteersCnt>0</TotalVolunteersCnt>
+      <TotalGrossUBIAmt>0</TotalGrossUBIAmt>
+      <NetUnrelatedBusTxblIncmAmt>0</NetUnrelatedBusTxblIncmAmt>
+      <PYContributionsGrantsAmt>5340269</PYContributionsGrantsAmt>
+      <CYContributionsGrantsAmt>6435796</CYContributionsGrantsAmt>
+      <PYProgramServiceRevenueAmt>0</PYProgramServiceRevenueAmt>
+      <CYProgramServiceRevenueAmt>0</CYProgramServiceRevenueAmt>
+      <PYInvestmentIncomeAmt>66823</PYInvestmentIncomeAmt>
+      <CYInvestmentIncomeAmt>-6</CYInvestmentIncomeAmt>
+      <PYOtherRevenueAmt>1463</PYOtherRevenueAmt>
+      <CYOtherRevenueAmt>4275</CYOtherRevenueAmt>
+      <PYTotalRevenueAmt>5408555</PYTotalRevenueAmt>
+      <CYTotalRevenueAmt>6440065</CYTotalRevenueAmt>
+      <PYGrantsAndSimilarPaidAmt>679179</PYGrantsAndSimilarPaidAmt>
+      <CYGrantsAndSimilarPaidAmt>809945</CYGrantsAndSimilarPaidAmt>
+      <PYBenefitsPaidToMembersAmt>0</PYBenefitsPaidToMembersAmt>
+      <CYBenefitsPaidToMembersAmt>0</CYBenefitsPaidToMembersAmt>
+      <PYSalariesCompEmpBnftPaidAmt>3800170</PYSalariesCompEmpBnftPaidAmt>
+      <CYSalariesCompEmpBnftPaidAmt>3167774</CYSalariesCompEmpBnftPaidAmt>
+      <PYTotalProfFndrsngExpnsAmt>0</PYTotalProfFndrsngExpnsAmt>
+      <CYTotalProfFndrsngExpnsAmt>0</CYTotalProfFndrsngExpnsAmt>
+      <CYTotalFundraisingExpenseAmt>0</CYTotalFundraisingExpenseAmt>
+      <PYOtherExpensesAmt>1926615</PYOtherExpensesAmt>
+      <CYOtherExpensesAmt>1764125</CYOtherExpensesAmt>
+      <PYTotalExpensesAmt>6405964</PYTotalExpensesAmt>
+      <CYTotalExpensesAmt>5741844</CYTotalExpensesAmt>
+      <PYRevenuesLessExpensesAmt>-997409</PYRevenuesLessExpensesAmt>
+      <CYRevenuesLessExpensesAmt>698221</CYRevenuesLessExpensesAmt>
+      <TotalAssetsBOYAmt>2002696</TotalAssetsBOYAmt>
+      <TotalAssetsEOYAmt>2543250</TotalAssetsEOYAmt>
+      <TotalLiabilitiesBOYAmt>844403</TotalLiabilitiesBOYAmt>
+      <TotalLiabilitiesEOYAmt>737659</TotalLiabilitiesEOYAmt>
+      <NetAssetsOrFundBalancesBOYAmt>1158293</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>1805591</NetAssetsOrFundBalancesEOYAmt>
+      <InfoInScheduleOPartIIIInd>X</InfoInScheduleOPartIIIInd>
+      <MissionDesc>HASKINS LABORATORIES IS AN INDEPENDENT, INTERNATIONAL, MULTIDISCIPLINARY COMMUNITY OF RESEARCHERS CONDUCTING BASIC RESEARCH ON SPOKEN AND WRITTEN LANGUAGE. EXCHANGING IDEAS, FOSTERING COLLABORATIONS, AND FORGING PARTNERSHIPS ACROSS THE SCIENCES, IT PRODUCES GROUNDBREAKING RESEARCH THAT ENHANCES OUR UNDERSTANDING OF, AND REVEALS WAYS TO IMPROVE OR REMEDIATE, SPEECH PERCEPTION AND PRODUCTION, READING AND READING DISABILITIES, AND HUMAN COMMUNICATION.</MissionDesc>
+      <SignificantNewProgramSrvcInd>0</SignificantNewProgramSrvcInd>
+      <SignificantChangeInd>0</SignificantChangeInd>
+      <ExpenseAmt>5728715</ExpenseAmt>
+      <GrantAmt>809945</GrantAmt>
+      <Desc>THE CURRENT GROUP OF RESEARCH PROJECTS BEING CARRIED OUT AT THE LABORATORIES IS MUTUALLY SUPPORTIVE OF ONE ANOTHER AND COMBINE TO FORM A COMPREHENSIVE RESEARCH PROGRAM WITH A SINGLE UNIFYING FOCUS: HUMAN COMMUNICATION BY SPEECH AND READING.LINKS BETWEEN PRODUCTION AND PERCEPTION IN SPEECH: THE GOALS ARE TO OBTAIN DATA TO SUBSTANTIATE THE CLAIM THAT SPEECH PRODUCTION AND PERCEPTION ARE RELATED AND TO VALIDATE THE ARTICULATORY GESTURE AS THE LINK BETWEEN PRODUCTION AND PERCEPTION. THE METHOD OF INQUIRY INVOLVES ATTEMPTING TO SHOW THAT THOSE ACOUSTIC PARAMETERS THAT VARY TOGETHER AS A RESULT OF SOME ARTICULATOR MOVEMENT ALSO COHERE IN PERCEPTION.SPEECH MOTOR LEARNING AND SENSORY PLASTICITY IN CHILDREN AND ADULTS: THE PROPOSED STUDIES WILL FOCUS ON THE NEURAL SUBSTRATES OF SPEECH MOTOR DEVELOPMENT IN CHILDREN. THE PLAN IS TO USE A MULTI-MODAL APPROACH THAT COMBINES ADVANCED PSYCHOPHYSICAL AND NEUROIMAGING TECHNIQUES.INDIVIDUAL DIFFERENCES IN LEARNING POTENTIAL FOR LANGUAGE AND LITERACY: THE UNACCEPTABLY HIGH INCIDENCE OF POOR LITERACY SKILLS AMONG AMERICAN YOUNG PEOPLE IS A PUBLIC HEALTH CRISIS THAT IS BOTH INSUFFICIENTLY UNDERSTOOD AND UNDERSTUDIED. LOW READING SKILL IN ADULTS IS CONSISTENTLY ASSOCIATED WITH MANY NEGATIVE OUTCOMES, INCLUDING LESSER ECONOMIC SUCCESS, INCREASED RISK OF POOR MENTAL AND PHYSICAL HEALTH, AND POOR OUTCOMES FOR OFFSPRING. CLARIFYING THE CONNECTIONS BETWEEN LEARNING CAPACITIES AND LITERACY SKILLS IS ESSENTIAL FOR GAUGING POTENTIAL FOR REMEDIATION. THIS PROJECT WILL BUILD ON RESEARCH FROM OUR OWN GROUP AND ELSEWHERE SHOWING THAT POOR READERS EXHIBIT RELIABLE DIFFERENCES IN LEARNING OF LINGUISTIC AND ORTHOGRAPHIC STRUCTURE.TRAINING-INDUCED PLASTICITY IN HUMAN MOTOR AND SENSORY SYSTEMS: THE PLANNED STUDIES FOCUS ON THE SENSORIMOTOR SYSTEM AND EXPLORE THE IDEA THAT TRAINING INDUCED CHANGES TO THE BRAIN SPREAD FROM THE MOTOR TO SOMATOSENSORY AREAS OF THE BRAIN AND VICE VERSA. THE PLAN IS TO ADDRESS THE EFFECTS OF MOTOR LEARNING ON SENSORY SYSTEMS AND OF SOMATOSENSORY PERCEPTUAL TRAINING ON MOTOR SYSTEMS BY USING AN APPROACH THAT COMBINES PSYCHOPHYSICAL, NEUROPHYSIOLOGICAL AND NEUROIMAGING TECHNIQUES.RETRIEVAL INTERFERENCE IN SKILLED AND UNSKILLED READING COMPREHENSION: POOR READING ABILITY HAS PROFOUND COGNITIVE, EMOTIONAL, AND BEHAVIORAL CONSEQUENCES FOR THE DEVELOPING CHILD, AND-IF NOT REMEDIATED-EVENTUALLY HAS ECONOMIC CONSEQUENCES FOR THE ADULT. THIS PROPOSAL BRINGS TOGETHER FINDINGS FROM THREE SO FAR UNINTEGRATED RESEARCH COMMUNITIES (MEMORY, ADULT SENTENCE AND DISCOURSE PROCESSING, AND READING DISABILITY) AND AN ALTERNATIVE RESEARCH SAMPLE TO CREATE A NOVEL APPROACH TOWARDS UNDERSTANDING POOR COMPREHENSION. SEE CONTINUATION BELOW</Desc>
+      <TotalProgramServiceExpensesAmt>5728715</TotalProgramServiceExpensesAmt>
+      <DescribedInSection501c3Ind referenceDocumentId="RetDoc1039100001">1</DescribedInSection501c3Ind>
+      <ScheduleBRequiredInd referenceDocumentId="RetDoc1234500001">1</ScheduleBRequiredInd>
+      <PoliticalCampaignActyInd>0</PoliticalCampaignActyInd>
+      <LobbyingActivitiesInd>0</LobbyingActivitiesInd>
+      <SubjectToProxyTaxInd>0</SubjectToProxyTaxInd>
+      <DonorAdvisedFundInd referenceDocumentId="RetDoc1040000001">0</DonorAdvisedFundInd>
+      <ConservationEasementsInd referenceDocumentId="RetDoc1040000001">0</ConservationEasementsInd>
+      <CollectionsOfArtInd referenceDocumentId="RetDoc1040000001">0</CollectionsOfArtInd>
+      <CreditCounselingInd referenceDocumentId="RetDoc1040000001">0</CreditCounselingInd>
+      <TempOrPermanentEndowmentsInd referenceDocumentId="RetDoc1040000001">0</TempOrPermanentEndowmentsInd>
+      <ReportLandBuildingEquipmentInd referenceDocumentId="RetDoc1040000001">1</ReportLandBuildingEquipmentInd>
+      <ReportInvestmentsOtherSecInd referenceDocumentId="RetDoc1040000001">0</ReportInvestmentsOtherSecInd>
+      <ReportProgramRelatedInvstInd referenceDocumentId="RetDoc1040000001">0</ReportProgramRelatedInvstInd>
+      <ReportOtherAssetsInd referenceDocumentId="RetDoc1040000001">1</ReportOtherAssetsInd>
+      <ReportOtherLiabilitiesInd referenceDocumentId="RetDoc1040000001">0</ReportOtherLiabilitiesInd>
+      <IncludeFIN48FootnoteInd referenceDocumentId="RetDoc1040000001">1</IncludeFIN48FootnoteInd>
+      <IndependentAuditFinclStmtInd referenceDocumentId="RetDoc1040000001">1</IndependentAuditFinclStmtInd>
+      <ConsolidatedAuditFinclStmtInd referenceDocumentId="RetDoc1040000001">0</ConsolidatedAuditFinclStmtInd>
+      <SchoolOperatingInd>0</SchoolOperatingInd>
+      <ForeignOfficeInd>1</ForeignOfficeInd>
+      <ForeignActivitiesInd referenceDocumentId="RetDoc1040500001">1</ForeignActivitiesInd>
+      <MoreThan5000KToOrgInd referenceDocumentId="RetDoc1040500001">1</MoreThan5000KToOrgInd>
+      <MoreThan5000KToIndividualsInd referenceDocumentId="RetDoc1040500001">0</MoreThan5000KToIndividualsInd>
+      <ProfessionalFundraisingInd>0</ProfessionalFundraisingInd>
+      <FundraisingActivitiesInd>0</FundraisingActivitiesInd>
+      <GamingActivitiesInd>0</GamingActivitiesInd>
+      <OperateHospitalInd>0</OperateHospitalInd>
+      <GrantsToOrganizationsInd referenceDocumentId="RetDoc1041900001">1</GrantsToOrganizationsInd>
+      <GrantsToIndividualsInd referenceDocumentId="RetDoc1041900001">0</GrantsToIndividualsInd>
+      <ScheduleJRequiredInd referenceDocumentId="RetDoc1042400001">1</ScheduleJRequiredInd>
+      <TaxExemptBondsInd>0</TaxExemptBondsInd>
+      <EngagedInExcessBenefitTransInd>0</EngagedInExcessBenefitTransInd>
+      <PYExcessBenefitTransInd>0</PYExcessBenefitTransInd>
+      <LoanOutstandingInd>0</LoanOutstandingInd>
+      <GrantToRelatedPersonInd>0</GrantToRelatedPersonInd>
+      <BusinessRlnWithOrgMemInd>0</BusinessRlnWithOrgMemInd>
+      <BusinessRlnWithFamMemInd>0</BusinessRlnWithFamMemInd>
+      <BusinessRlnWithOfficerEntInd>0</BusinessRlnWithOfficerEntInd>
+      <DeductibleNonCashContriInd>0</DeductibleNonCashContriInd>
+      <DeductibleArtContributionInd>0</DeductibleArtContributionInd>
+      <TerminateOperationsInd>0</TerminateOperationsInd>
+      <PartialLiquidationInd>0</PartialLiquidationInd>
+      <DisregardedEntityInd referenceDocumentId="RetDoc1043400001">0</DisregardedEntityInd>
+      <RelatedEntityInd referenceDocumentId="RetDoc1043400001">1</RelatedEntityInd>
+      <RelatedOrganizationCtrlEntInd>1</RelatedOrganizationCtrlEntInd>
+      <TransactionWithControlEntInd referenceDocumentId="RetDoc1043400001">0</TransactionWithControlEntInd>
+      <TrnsfrExmptNonChrtblRltdOrgInd referenceDocumentId="RetDoc1043400001">0</TrnsfrExmptNonChrtblRltdOrgInd>
+      <ActivitiesConductedPrtshpInd referenceDocumentId="RetDoc1043400001">0</ActivitiesConductedPrtshpInd>
+      <ScheduleORequiredInd>1</ScheduleORequiredInd>
+      <IRPDocumentCnt>4</IRPDocumentCnt>
+      <IRPDocumentW2GCnt>0</IRPDocumentW2GCnt>
+      <BackupWthldComplianceInd>1</BackupWthldComplianceInd>
+      <EmployeeCnt>85</EmployeeCnt>
+      <EmploymentTaxReturnsFiledInd>1</EmploymentTaxReturnsFiledInd>
+      <UnrelatedBusIncmOverLimitInd>0</UnrelatedBusIncmOverLimitInd>
+      <ForeignFinancialAccountInd>0</ForeignFinancialAccountInd>
+      <ProhibitedTaxShelterTransInd>0</ProhibitedTaxShelterTransInd>
+      <TaxablePartyNotificationInd>0</TaxablePartyNotificationInd>
+      <NondeductibleContributionsInd>0</NondeductibleContributionsInd>
+      <QuidProQuoContributionsInd>0</QuidProQuoContributionsInd>
+      <Form8282PropertyDisposedOfInd>0</Form8282PropertyDisposedOfInd>
+      <RcvFndsToPayPrsnlBnftCntrctInd>0</RcvFndsToPayPrsnlBnftCntrctInd>
+      <PayPremiumsPrsnlBnftCntrctInd>0</PayPremiumsPrsnlBnftCntrctInd>
+      <IndoorTanningServicesInd>0</IndoorTanningServicesInd>
+      <SubjToTaxRmnrtnExPrchtPymtInd>0</SubjToTaxRmnrtnExPrchtPymtInd>
+      <SubjectToExcsTaxNetInvstIncInd>0</SubjectToExcsTaxNetInvstIncInd>
+      <InfoInScheduleOPartVIInd>X</InfoInScheduleOPartVIInd>
+      <GoverningBodyVotingMembersCnt>15</GoverningBodyVotingMembersCnt>
+      <IndependentVotingMemberCnt>14</IndependentVotingMemberCnt>
+      <FamilyOrBusinessRlnInd>0</FamilyOrBusinessRlnInd>
+      <DelegationOfMgmtDutiesInd>0</DelegationOfMgmtDutiesInd>
+      <ChangeToOrgDocumentsInd>0</ChangeToOrgDocumentsInd>
+      <MaterialDiversionOrMisuseInd>0</MaterialDiversionOrMisuseInd>
+      <MembersOrStockholdersInd>0</MembersOrStockholdersInd>
+      <ElectionOfBoardMembersInd>0</ElectionOfBoardMembersInd>
+      <DecisionsSubjectToApprovaInd>0</DecisionsSubjectToApprovaInd>
+      <MinutesOfGoverningBodyInd>1</MinutesOfGoverningBodyInd>
+      <MinutesOfCommitteesInd>0</MinutesOfCommitteesInd>
+      <OfficerMailingAddressInd>0</OfficerMailingAddressInd>
+      <LocalChaptersInd>0</LocalChaptersInd>
+      <Form990ProvidedToGvrnBodyInd>0</Form990ProvidedToGvrnBodyInd>
+      <ConflictOfInterestPolicyInd>1</ConflictOfInterestPolicyInd>
+      <AnnualDisclosureCoveredPrsnInd>1</AnnualDisclosureCoveredPrsnInd>
+      <RegularMonitoringEnfrcInd>1</RegularMonitoringEnfrcInd>
+      <WhistleblowerPolicyInd>1</WhistleblowerPolicyInd>
+      <DocumentRetentionPolicyInd>1</DocumentRetentionPolicyInd>
+      <CompensationProcessCEOInd>1</CompensationProcessCEOInd>
+      <CompensationProcessOtherInd>1</CompensationProcessOtherInd>
+      <InvestmentInJointVentureInd>0</InvestmentInJointVentureInd>
+      <StatesWhereCopyOfReturnIsFldCd>CT</StatesWhereCopyOfReturnIsFldCd>
+      <StatesWhereCopyOfReturnIsFldCd>NY</StatesWhereCopyOfReturnIsFldCd>
+      <UponRequestInd>X</UponRequestInd>
+      <BooksInCareOfDetail>
+        <BusinessName>
+          <BusinessNameLine1Txt>JOSEPH P CARDONE</BusinessNameLine1Txt>
+        </BusinessName>
+        <PhoneNum>2038656163</PhoneNum>
+        <USAddress>
+          <AddressLine1Txt>300 GEORGE STREET</AddressLine1Txt>
+          <CityNm>NEW HAVEN</CityNm>
+          <StateAbbreviationCd>CT</StateAbbreviationCd>
+          <ZIPCd>06511</ZIPCd>
+        </USAddress>
+      </BooksInCareOfDetail>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>SHEILA E BLUMSTEIN</PersonNm>
+        <TitleTxt>CHAIR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>KENNETH R PUGH</PersonNm>
+        <TitleTxt>PRESIDENT</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>1.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>56026</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>1575</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>MICHAEL ALMOND</PersonNm>
+        <TitleTxt>TREASURER</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>ERNIE TEITELL</PersonNm>
+        <TitleTxt>SECRETARY OF THE BOARD</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>GERRY ALTMANN</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>WILLIAM H BAKER JR</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>SUSAN BRADY</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>MARVIN CHUN</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>DAVITA GLASBERG</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>FRANK KEIL</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>LINDA C MAYES</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>PHILIP RUBIN</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>DONALD SHANKWEILER</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>OVID JL TZENG</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JULIE WASHINGTON</PersonNm>
+        <TitleTxt>DIRECTOR</TitleTxt>
+        <AverageHoursPerWeekRt>1.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>ARTHUR S ABRAMSON</PersonNm>
+        <TitleTxt>CORPORATE SECRETARY</TitleTxt>
+        <AverageHoursPerWeekRt>20.00</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JOSEPH P CARDONE</PersonNm>
+        <TitleTxt>VICE PRESIDENT OF FINANCE</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>163274</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>57144</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>VINCENT L GRACCO</PersonNm>
+        <TitleTxt>VICE PRESIDENT OF SCIENTIFIC OPS</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>203529</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>64108</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>DOUGLAS H WHALEN</PersonNm>
+        <TitleTxt>VICE PRESIDENT OF RESEARCH</TitleTxt>
+        <AverageHoursPerWeekRt>20.00</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>735</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>JULIE VAN DYKE</PersonNm>
+        <TitleTxt>SENIOR SCIENTIST</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>129010</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>44769</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>BETTY J DELISE</PersonNm>
+        <TitleTxt>CONTROLLER</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>125584</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>29742</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>FORREST D BRAZE</PersonNm>
+        <TitleTxt>SENIOR SCIENTIST</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>142234</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>60818</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>EINAR MENCL</PersonNm>
+        <TitleTxt>SENIOR SCIENTIST</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>100008</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>28788</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>MARK TIEDE</PersonNm>
+        <TitleTxt>SENIOR SCIENTIST</TitleTxt>
+        <AverageHoursPerWeekRt>40.00</AverageHoursPerWeekRt>
+        <HighestCompensatedEmployeeInd>X</HighestCompensatedEmployeeInd>
+        <ReportableCompFromOrgAmt>105161</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>13957</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <TotalReportableCompFromOrgAmt>1024826</TotalReportableCompFromOrgAmt>
+      <TotReportableCompRltdOrgAmt>0</TotReportableCompRltdOrgAmt>
+      <TotalOtherCompensationAmt>301636</TotalOtherCompensationAmt>
+      <IndivRcvdGreaterThan100KCnt>7</IndivRcvdGreaterThan100KCnt>
+      <FormerOfcrEmployeesListedInd>0</FormerOfcrEmployeesListedInd>
+      <TotalCompGreaterThan150KInd>1</TotalCompGreaterThan150KInd>
+      <CompensationFromOtherSrcsInd>0</CompensationFromOtherSrcsInd>
+      <CntrctRcvdGreaterThan100KCnt>0</CntrctRcvdGreaterThan100KCnt>
+      <GovernmentGrantsAmt>5543973</GovernmentGrantsAmt>
+      <AllOtherContributionsAmt>891823</AllOtherContributionsAmt>
+      <TotalContributionsAmt>6435796</TotalContributionsAmt>
+      <InvestmentIncomeGrp>
+        <TotalRevenueColumnAmt>20354</TotalRevenueColumnAmt>
+        <ExclusionAmt>20354</ExclusionAmt>
+      </InvestmentIncomeGrp>
+      <GrossAmountSalesAssetsGrp>
+        <SecuritiesAmt>263345</SecuritiesAmt>
+      </GrossAmountSalesAssetsGrp>
+      <LessCostOthBasisSalesExpnssGrp>
+        <SecuritiesAmt>283705</SecuritiesAmt>
+      </LessCostOthBasisSalesExpnssGrp>
+      <GainOrLossGrp>
+        <SecuritiesAmt>-20360</SecuritiesAmt>
+      </GainOrLossGrp>
+      <NetGainOrLossInvestmentsGrp>
+        <TotalRevenueColumnAmt>-20360</TotalRevenueColumnAmt>
+        <ExclusionAmt>-20360</ExclusionAmt>
+      </NetGainOrLossInvestmentsGrp>
+      <OtherRevenueMiscGrp>
+        <Desc>MISC. REVENUE-RELATED-</Desc>
+        <BusinessCd>541700</BusinessCd>
+        <TotalRevenueColumnAmt>4275</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>4275</RelatedOrExemptFuncIncomeAmt>
+      </OtherRevenueMiscGrp>
+      <OtherRevenueTotalAmt>4275</OtherRevenueTotalAmt>
+      <TotalRevenueGrp>
+        <TotalRevenueColumnAmt>6440065</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>4275</RelatedOrExemptFuncIncomeAmt>
+        <UnrelatedBusinessRevenueAmt>0</UnrelatedBusinessRevenueAmt>
+        <ExclusionAmt>-6</ExclusionAmt>
+      </TotalRevenueGrp>
+      <GrantsToDomesticOrgsGrp>
+        <TotalAmt>506736</TotalAmt>
+        <ProgramServicesAmt>506736</ProgramServicesAmt>
+      </GrantsToDomesticOrgsGrp>
+      <ForeignGrantsGrp>
+        <TotalAmt>303209</TotalAmt>
+        <ProgramServicesAmt>303209</ProgramServicesAmt>
+      </ForeignGrantsGrp>
+      <CompCurrentOfcrDirectorsGrp>
+        <TotalAmt>546391</TotalAmt>
+        <ProgramServicesAmt>325775</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>220616</ManagementAndGeneralAmt>
+      </CompCurrentOfcrDirectorsGrp>
+      <OtherSalariesAndWagesGrp>
+        <TotalAmt>1884945</TotalAmt>
+        <ProgramServicesAmt>1615814</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>269131</ManagementAndGeneralAmt>
+      </OtherSalariesAndWagesGrp>
+      <PensionPlanContributionsGrp>
+        <TotalAmt>172543</TotalAmt>
+        <ProgramServicesAmt>172543</ProgramServicesAmt>
+      </PensionPlanContributionsGrp>
+      <OtherEmployeeBenefitsGrp>
+        <TotalAmt>384333</TotalAmt>
+        <ProgramServicesAmt>384333</ProgramServicesAmt>
+      </OtherEmployeeBenefitsGrp>
+      <PayrollTaxesGrp>
+        <TotalAmt>179562</TotalAmt>
+        <ProgramServicesAmt>179562</ProgramServicesAmt>
+      </PayrollTaxesGrp>
+      <FeesForServicesLegalGrp>
+        <TotalAmt>4050</TotalAmt>
+        <ProgramServicesAmt>4050</ProgramServicesAmt>
+      </FeesForServicesLegalGrp>
+      <FeesForServicesAccountingGrp>
+        <TotalAmt>47500</TotalAmt>
+        <ManagementAndGeneralAmt>47500</ManagementAndGeneralAmt>
+      </FeesForServicesAccountingGrp>
+      <FeesForSrvcInvstMgmntFeesGrp>
+        <TotalAmt>11541</TotalAmt>
+        <ManagementAndGeneralAmt>11541</ManagementAndGeneralAmt>
+      </FeesForSrvcInvstMgmntFeesGrp>
+      <FeesForServicesOtherGrp>
+        <TotalAmt>435678</TotalAmt>
+        <ProgramServicesAmt>332555</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>103123</ManagementAndGeneralAmt>
+      </FeesForServicesOtherGrp>
+      <OfficeExpensesGrp>
+        <TotalAmt>91706</TotalAmt>
+        <ProgramServicesAmt>8618</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>83088</ManagementAndGeneralAmt>
+      </OfficeExpensesGrp>
+      <InformationTechnologyGrp>
+        <TotalAmt>1018</TotalAmt>
+        <ProgramServicesAmt>939</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>79</ManagementAndGeneralAmt>
+      </InformationTechnologyGrp>
+      <OccupancyGrp>
+        <TotalAmt>810576</TotalAmt>
+        <ProgramServicesAmt>548</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>810028</ManagementAndGeneralAmt>
+      </OccupancyGrp>
+      <TravelGrp>
+        <TotalAmt>102916</TotalAmt>
+        <ProgramServicesAmt>94844</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>8072</ManagementAndGeneralAmt>
+      </TravelGrp>
+      <DepreciationDepletionGrp>
+        <TotalAmt>122583</TotalAmt>
+        <ProgramServicesAmt>42644</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>79939</ManagementAndGeneralAmt>
+      </DepreciationDepletionGrp>
+      <OtherExpensesGrp>
+        <Desc>LAB SUPPLIES &amp; EXPENSES</Desc>
+        <TotalAmt>73684</TotalAmt>
+        <ProgramServicesAmt>73684</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>MISCELLANEOUS-OTHER</Desc>
+        <TotalAmt>62873</TotalAmt>
+        <ProgramServicesAmt>18629</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>44244</ManagementAndGeneralAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>ALLOCATE INDIRECT COSTS</Desc>
+        <TotalAmt>0</TotalAmt>
+        <ProgramServicesAmt>1664232</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>-1664232</ManagementAndGeneralAmt>
+      </OtherExpensesGrp>
+      <TotalFunctionalExpensesGrp>
+        <TotalAmt>5741844</TotalAmt>
+        <ProgramServicesAmt>5728715</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>13129</ManagementAndGeneralAmt>
+        <FundraisingAmt>0</FundraisingAmt>
+      </TotalFunctionalExpensesGrp>
+      <CashNonInterestBearingGrp>
+        <BOYAmt>64228</BOYAmt>
+        <EOYAmt>268213</EOYAmt>
+      </CashNonInterestBearingGrp>
+      <SavingsAndTempCashInvstGrp>
+        <BOYAmt>24067</BOYAmt>
+        <EOYAmt>361021</EOYAmt>
+      </SavingsAndTempCashInvstGrp>
+      <PledgesAndGrantsReceivableGrp>
+        <BOYAmt>88704</BOYAmt>
+        <EOYAmt>203701</EOYAmt>
+      </PledgesAndGrantsReceivableGrp>
+      <LandBldgEquipCostOrOtherBssAmt>2839602</LandBldgEquipCostOrOtherBssAmt>
+      <LandBldgEquipAccumDeprecAmt>2185616</LandBldgEquipAccumDeprecAmt>
+      <LandBldgEquipBasisNetGrp>
+        <BOYAmt>767286</BOYAmt>
+        <EOYAmt>653986</EOYAmt>
+      </LandBldgEquipBasisNetGrp>
+      <InvestmentsPubTradedSecGrp>
+        <BOYAmt>893338</BOYAmt>
+        <EOYAmt>893914</EOYAmt>
+      </InvestmentsPubTradedSecGrp>
+      <OtherAssetsTotalGrp>
+        <BOYAmt>165073</BOYAmt>
+        <EOYAmt>162415</EOYAmt>
+      </OtherAssetsTotalGrp>
+      <TotalAssetsGrp>
+        <BOYAmt>2002696</BOYAmt>
+        <EOYAmt>2543250</EOYAmt>
+      </TotalAssetsGrp>
+      <MortgNotesPyblScrdInvstPropGrp>
+        <BOYAmt>844403</BOYAmt>
+        <EOYAmt>737659</EOYAmt>
+      </MortgNotesPyblScrdInvstPropGrp>
+      <TotalLiabilitiesGrp>
+        <BOYAmt>844403</BOYAmt>
+        <EOYAmt>737659</EOYAmt>
+      </TotalLiabilitiesGrp>
+      <OrganizationFollowsSFAS117Ind>X</OrganizationFollowsSFAS117Ind>
+      <UnrestrictedNetAssetsGrp>
+        <BOYAmt>1063396</BOYAmt>
+        <EOYAmt>1001717</EOYAmt>
+      </UnrestrictedNetAssetsGrp>
+      <TemporarilyRstrNetAssetsGrp>
+        <BOYAmt>94897</BOYAmt>
+        <EOYAmt>803874</EOYAmt>
+      </TemporarilyRstrNetAssetsGrp>
+      <TotalNetAssetsFundBalanceGrp>
+        <BOYAmt>1158293</BOYAmt>
+        <EOYAmt>1805591</EOYAmt>
+      </TotalNetAssetsFundBalanceGrp>
+      <TotLiabNetAssetsFundBalanceGrp>
+        <BOYAmt>2002696</BOYAmt>
+        <EOYAmt>2543250</EOYAmt>
+      </TotLiabNetAssetsFundBalanceGrp>
+      <ReconcilationRevenueExpnssAmt>698221</ReconcilationRevenueExpnssAmt>
+      <NetUnrlzdGainsLossesInvstAmt>-50923</NetUnrlzdGainsLossesInvstAmt>
+      <OtherChangesInNetAssetsAmt>0</OtherChangesInNetAssetsAmt>
+      <InfoInScheduleOPartXIIInd>X</InfoInScheduleOPartXIIInd>
+      <MethodOfAccountingOtherInd methodOfAccountingOtherDesc="MODIFIED CASH BASIS">X</MethodOfAccountingOtherInd>
+      <AccountantCompileOrReviewInd>0</AccountantCompileOrReviewInd>
+      <FSAuditedInd>1</FSAuditedInd>
+      <FSAuditedBasisGrp>
+        <SeparateBasisFinclStmtInd>X</SeparateBasisFinclStmtInd>
+      </FSAuditedBasisGrp>
+      <AuditCommitteeInd>1</AuditCommitteeInd>
+      <FederalGrantAuditRequiredInd>1</FederalGrantAuditRequiredInd>
+      <FederalGrantAuditPerformedInd>1</FederalGrantAuditPerformedInd>
+    </IRS990>
+    <IRS990ScheduleA documentId="RetDoc1039100001">
+      <PublicOrganization170Ind>X</PublicOrganization170Ind>
+      <GiftsGrantsContriRcvd170Grp>
+        <CurrentTaxYearMinus4YearsAmt>7708812</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>6822254</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>6452009</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>5340269</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>6435796</CurrentTaxYearAmt>
+        <TotalAmt>32759140</TotalAmt>
+      </GiftsGrantsContriRcvd170Grp>
+      <TotalCalendarYear170Grp>
+        <CurrentTaxYearMinus4YearsAmt>7708812</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>6822254</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>6452009</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>5340269</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>6435796</CurrentTaxYearAmt>
+        <TotalAmt>32759140</TotalAmt>
+      </TotalCalendarYear170Grp>
+      <PublicSupportTotal170Amt>32759140</PublicSupportTotal170Amt>
+      <GrossInvestmentIncome170Grp>
+        <CurrentTaxYearMinus4YearsAmt>51934</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>31536</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>48902</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>36265</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>20354</CurrentTaxYearAmt>
+        <TotalAmt>188991</TotalAmt>
+      </GrossInvestmentIncome170Grp>
+      <OtherIncome170Grp>
+        <CurrentTaxYearMinus4YearsAmt>5314</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>1586</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>1235</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>1463</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>4275</CurrentTaxYearAmt>
+        <TotalAmt>13873</TotalAmt>
+      </OtherIncome170Grp>
+      <TotalSupportAmt>32962004</TotalSupportAmt>
+      <PublicSupportCY170Pct>0.99380</PublicSupportCY170Pct>
+      <PublicSupportPY170Pct>0.99190</PublicSupportPY170Pct>
+      <ThirtyThrPctSuprtTestsCY170Ind>X</ThirtyThrPctSuprtTestsCY170Ind>
+      <Form990ScheduleAPartVIGrp>
+        <FormAndLineReferenceDesc>SCHEDULE A, PART II, LINE 10, EXPLANATION OF OTHER INCOME:</FormAndLineReferenceDesc>
+        <ExplanationTxt>MISCELLANEOUS INCOME - 2014 AMOUNT: $ 5,314. 2015 AMOUNT: $ 1,586. 2016 AMOUNT: $ 1,235. 2017 AMOUNT: $ 1,463. 2018 AMOUNT: $ 4,275.</ExplanationTxt>
+      </Form990ScheduleAPartVIGrp>
+    </IRS990ScheduleA>
+    <IRS990ScheduleB documentId="RetDoc1234500001"/>
+    <IRS990ScheduleD documentId="RetDoc1040000001">
+      <LeaseholdImprovementsGrp>
+        <OtherCostOrOtherBasisAmt>1581895</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>1066186</DepreciationAmt>
+        <BookValueAmt>515709</BookValueAmt>
+      </LeaseholdImprovementsGrp>
+      <EquipmentGrp>
+        <OtherCostOrOtherBasisAmt>1257707</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>1119430</DepreciationAmt>
+        <BookValueAmt>138277</BookValueAmt>
+      </EquipmentGrp>
+      <TotalBookValueLandBuildingsAmt>653986</TotalBookValueLandBuildingsAmt>
+      <OtherAssetsOrgGrp>
+        <Desc>DEPOSITS</Desc>
+        <BookValueAmt>121421</BookValueAmt>
+      </OtherAssetsOrgGrp>
+      <OtherAssetsOrgGrp>
+        <Desc>MISCELLANEOUS RECEIVABLES</Desc>
+        <BookValueAmt>40994</BookValueAmt>
+      </OtherAssetsOrgGrp>
+      <TotalBookValueOtherAssetsAmt>162415</TotalBookValueOtherAssetsAmt>
+      <FootnoteTextInd>X</FootnoteTextInd>
+      <TotalRevEtcAuditedFinclStmtAmt>6377601</TotalRevEtcAuditedFinclStmtAmt>
+      <NetUnrealizedGainsInvstAmt>-50923</NetUnrealizedGainsInvstAmt>
+      <RevenueNotReportedAmt>-50923</RevenueNotReportedAmt>
+      <RevenueSubtotalAmt>6428524</RevenueSubtotalAmt>
+      <InvestmentExpensesNotIncldAmt>11541</InvestmentExpensesNotIncldAmt>
+      <RevenueNotReportedFinclStmtAmt>11541</RevenueNotReportedFinclStmtAmt>
+      <TotalRevenuePerForm990Amt>6440065</TotalRevenuePerForm990Amt>
+      <TotExpnsEtcAuditedFinclStmtAmt>5739586</TotExpnsEtcAuditedFinclStmtAmt>
+      <OtherExpensesIncludedAmt>9283</OtherExpensesIncludedAmt>
+      <ExpensesNotReportedAmt>9283</ExpensesNotReportedAmt>
+      <ExpensesSubtotalAmt>5730303</ExpensesSubtotalAmt>
+      <InvestmentExpensesNotIncld2Amt>11541</InvestmentExpensesNotIncld2Amt>
+      <ExpensesNotRptFinclStmtAmt>11541</ExpensesNotRptFinclStmtAmt>
+      <TotalExpensesPerForm990Amt>5741844</TotalExpensesPerForm990Amt>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART X, LINE 2:</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE LABORATORY EVALUATES ALL SIGNIFICANT TAX POSITIONS AS REQUIRED BY U.S. GENERALLY ACCEPTED ACCOUNTING PRINCIPLES. AS OF DECEMBER 31, 2018, THE LABORATORY DOES NOT BELIEVE THAT IT HAS TAKEN ANY POSITIONS THAT WOULD REQUIRE THE RECORDING OF ANY ADDITIONAL TAX LIABILITY NOR DOES IT BELIEVE THAT THERE ARE ANY UNREALIZED TAX BENEFITS THAT WOULD EITHER INCREASE OR DECREASE WITHIN THE NEXT YEAR. IT IS THE LABORATORY'S POLICY TO RECOGNIZE ANY INTEREST AND PENALTIES IN THE PROVISION FOR TAXES.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART XII, LINE 2D - OTHER ADJUSTMENTS:</FormAndLineReferenceDesc>
+        <ExplanationTxt>PURCHASE OF CAPITAL ASSETS 9,283.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleD>
+    <IRS990ScheduleF documentId="RetDoc1040500001">
+      <GrantRecordsMaintainedInd>1</GrantRecordsMaintainedInd>
+      <AccountActivitiesOutsideUSGrp>
+        <RegionTxt>NORTH AMERICA-CANADA AND MEXICO, BUT NOT THE UNITED STATES</RegionTxt>
+        <OfficesCnt>0</OfficesCnt>
+        <EmployeeCnt>3</EmployeeCnt>
+        <TypeOfActivitiesConductedTxt>GRANTS TO RECIPIENTS.</TypeOfActivitiesConductedTxt>
+        <SpecificServicesProvidedTxt>GRANTMAKING</SpecificServicesProvidedTxt>
+        <RegionTotalExpendituresAmt>261081</RegionTotalExpendituresAmt>
+      </AccountActivitiesOutsideUSGrp>
+      <AccountActivitiesOutsideUSGrp>
+        <RegionTxt>EUROPE (INCLUDING ICELAND &amp; GREENLAND) - ALBANIA, ANDORRA, AUSTRIA, BELGIUM</RegionTxt>
+        <OfficesCnt>0</OfficesCnt>
+        <EmployeeCnt>0</EmployeeCnt>
+        <TypeOfActivitiesConductedTxt>GRANTS TO RECIPIENTS.</TypeOfActivitiesConductedTxt>
+        <SpecificServicesProvidedTxt>GRANTMAKING</SpecificServicesProvidedTxt>
+        <RegionTotalExpendituresAmt>42128</RegionTotalExpendituresAmt>
+      </AccountActivitiesOutsideUSGrp>
+      <SubtotalOfficesCnt>0</SubtotalOfficesCnt>
+      <SubtotalEmployeesCnt>3</SubtotalEmployeesCnt>
+      <ContinuationTotalOfficeCnt>0</ContinuationTotalOfficeCnt>
+      <ContinuationTotalEmployeeCnt>0</ContinuationTotalEmployeeCnt>
+      <TotalOfficeCnt>0</TotalOfficeCnt>
+      <TotalEmployeeCnt>3</TotalEmployeeCnt>
+      <SubtotalSpentAmt>303209</SubtotalSpentAmt>
+      <ContinuationSpentAmt>0</ContinuationSpentAmt>
+      <TotalSpentAmt>303209</TotalSpentAmt>
+      <GrantsToOrgOutsideUSGrp>
+        <RegionTxt>NORTH AMERICA - CANADA AND MEXICO, BUT NOT THE UNITED STATES</RegionTxt>
+        <PurposeOfGrantTxt>TWO DISTINCT RESEARCH PROJECTS ON SPEECH AND MOTOR LEARNING AND SENSORY PLASTICITY IN CHILDREN AND ADULTS; AND TRAINING-INDUCED PLASTICITY IN HUMAN MOTOR AND SENSORY SYSTEMS</PurposeOfGrantTxt>
+        <CashGrantAmt>219293</CashGrantAmt>
+        <MannerOfCashDisbursementTxt>CHECK</MannerOfCashDisbursementTxt>
+      </GrantsToOrgOutsideUSGrp>
+      <GrantsToOrgOutsideUSGrp>
+        <RegionTxt>NORTH AMERICA - CANADA AND MEXICO, BUT NOT THE UNITED STATES</RegionTxt>
+        <PurposeOfGrantTxt>RESEARCH PROJECT ON THE TRAINING-INDUCED PLASTICITY IN HUMAN MOTOR AND SENSORY SYSTEMS</PurposeOfGrantTxt>
+        <CashGrantAmt>27331</CashGrantAmt>
+        <MannerOfCashDisbursementTxt>CHECK</MannerOfCashDisbursementTxt>
+      </GrantsToOrgOutsideUSGrp>
+      <GrantsToOrgOutsideUSGrp>
+        <RegionTxt>EUROPE (INCLUDING ICELAND &amp; GREENLAND)-ALBANIA, ANDORRA, AUSTRIA, BELGIUM</RegionTxt>
+        <PurposeOfGrantTxt>RESEARCH PROJECT ON PROBABILISTIC COMPUTATION IN THE CORTEX OF THE DEVELOPING HUMAN BRAIN</PurposeOfGrantTxt>
+        <CashGrantAmt>18756</CashGrantAmt>
+        <MannerOfCashDisbursementTxt>CHECK</MannerOfCashDisbursementTxt>
+      </GrantsToOrgOutsideUSGrp>
+      <GrantsToOrgOutsideUSGrp>
+        <RegionTxt>NORTH AMERICA - CANADA AND MEXICO, BUT NOT THE UNITED STATES</RegionTxt>
+        <PurposeOfGrantTxt>RESEARCH PROJECT ON SPEECH MOTOR LEARNING AND SENSORY PLASTICITY IN CHILDREN AND ADULTS</PurposeOfGrantTxt>
+        <CashGrantAmt>14457</CashGrantAmt>
+        <MannerOfCashDisbursementTxt>CHECK</MannerOfCashDisbursementTxt>
+      </GrantsToOrgOutsideUSGrp>
+      <GrantsToOrgOutsideUSGrp>
+        <RegionTxt>EUROPE (INCLUDING ICELAND &amp; GREENLAND)-ALBANIA, ANDORRA, AUSTRIA, BELGIUM</RegionTxt>
+        <PurposeOfGrantTxt>RESEARCH PROJECT ON SIGN LANGUAGE ACQUISITION, ANNOTATION, ARCHIVING AND SHARING</PurposeOfGrantTxt>
+        <CashGrantAmt>23372</CashGrantAmt>
+        <MannerOfCashDisbursementTxt>CHECK</MannerOfCashDisbursementTxt>
+      </GrantsToOrgOutsideUSGrp>
+      <Total501c3OrgCnt>5</Total501c3OrgCnt>
+      <TransferToForeignCorpInd>0</TransferToForeignCorpInd>
+      <InterestInForeignTrustInd>0</InterestInForeignTrustInd>
+      <ForeignCorpOwnershipInd>0</ForeignCorpOwnershipInd>
+      <PassiveForeignInvestmestCoInd>0</PassiveForeignInvestmestCoInd>
+      <ForeignPartnershipInd>0</ForeignPartnershipInd>
+      <BoycottCountriesInd>0</BoycottCountriesInd>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART I, LINE 2:</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE GRANTS MANAGER WILL MONITOR THE PROGRAMMATIC AND FINANCIAL ACTIVITIES OF ITS SUB-RECIPIENTS IN ORDER TO ENSURE PROPER STEWARDSHIP OF FUNDS AND THAT PERFORMANCE GOALS ARE ACHIEVED BASED ON THE SCOPE OF WORK AND BUDGET AUTHORIZED IN THE NEGOTIATED AGREEMENT.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART I, LINE 3:</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE ORGANIZATION USES THE MODIFIED CASH BASIS OF ACCOUNTING.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleF>
+    <IRS990ScheduleI documentId="RetDoc1041900001">
+      <GrantRecordsMaintainedInd>1</GrantRecordsMaintainedInd>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>UNIVERSITY OF CALIFORNIA - SAN FRANCISCO</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>500 PARNASSUS AVENUE</AddressLine1Txt>
+          <CityNm>SAN FRANCISCO</CityNm>
+          <StateAbbreviationCd>CA</StateAbbreviationCd>
+          <ZIPCd>94143</ZIPCd>
+        </USAddress>
+        <RecipientEIN>946036493</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>84247</CashGrantAmt>
+        <PurposeOfGrantTxt>RESEARCH PROJECTS ON NEUROCHEMISTRY AS A MODERATOR OF BRAIN NETWORKS FOR READING; AND COLLABORATIVE RESEARCH: PROSODIC STRUCTURE: AN INTEGRATED EMPIRICAL AND MODELING INVESTIGATION</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>YALE UNIVERSITY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>47 COLLEGE STREET</AddressLine1Txt>
+          <CityNm>NEW HAVEN</CityNm>
+          <StateAbbreviationCd>CT</StateAbbreviationCd>
+          <ZIPCd>06510</ZIPCd>
+        </USAddress>
+        <RecipientEIN>060646973</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>219541</CashGrantAmt>
+        <PurposeOfGrantTxt>RESEARCH PROJECTS ON NEUROCHEMISTRY AS A MODERATOR OF BRAIN NETWORKS FOR READING; AND TRACKING NEUROCOGNITIVE CHANGES DURING EVIDENCE BASED READING INSTRUCTION IN TYPICALLY AND ATYPICALLY DEVELOPING CHILDREN</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>RESEARCH FOUNDATION OF CUNY</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>365 FIFTH AVENUE</AddressLine1Txt>
+          <CityNm>NEW YORK</CityNm>
+          <StateAbbreviationCd>NY</StateAbbreviationCd>
+          <ZIPCd>10016</ZIPCd>
+        </USAddress>
+        <RecipientEIN>131988190</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>139840</CashGrantAmt>
+        <PurposeOfGrantTxt>RESEARCH PROJECT ON THE LINKS BETWEEN PRODUCTION AND PERCEPTION IN SPEECH</PurposeOfGrantTxt>
+      </RecipientTable>
+      <RecipientTable>
+        <RecipientBusinessName>
+          <BusinessNameLine1Txt>UNIVERSITY OF CONNECTICUT</BusinessNameLine1Txt>
+        </RecipientBusinessName>
+        <USAddress>
+          <AddressLine1Txt>436 WHITNEY ROAD EXT UNIT 1133</AddressLine1Txt>
+          <CityNm>STORRS</CityNm>
+          <StateAbbreviationCd>CT</StateAbbreviationCd>
+          <ZIPCd>06269</ZIPCd>
+        </USAddress>
+        <RecipientEIN>060772160</RecipientEIN>
+        <IRCSectionDesc>501(C)(3)</IRCSectionDesc>
+        <CashGrantAmt>63108</CashGrantAmt>
+        <PurposeOfGrantTxt>RESEARCH PROJECTS ON NEUROCHEMISTRY AS A MODERATOR OF BRAIN NETWORKS FOR READING; AND TRACKING NEUROCOGNITIVE CHANGES DURING EVIDENCE BASED READING INSTRUCTION IN TYPICALLY AND ATYPICALLY DEVELOPING CHILDREN</PurposeOfGrantTxt>
+      </RecipientTable>
+      <Total501c3OrgCnt>4</Total501c3OrgCnt>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART I, LINE 2:</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE GRANTS MANAGER WILL MONITOR THE PROGRAMMATIC AND FINANCIAL ACTIVITIES OF ITS SUB-RECIPIENTS IN ORDER TO ENSURE PROPER STEWARDSHIP OF FUNDS AND THAT PERFORMANCE GOALS ARE ACHIEVED BASED ON THE SCOPE OF WORK AND BUDGET AUTHORIZED IN THE NEGOTIATED AGREEMENT.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleI>
+    <IRS990ScheduleJ documentId="RetDoc1042400001">
+      <CompensationCommitteeInd>X</CompensationCommitteeInd>
+      <CompensationSurveyInd>X</CompensationSurveyInd>
+      <BoardOrCommitteeApprovalInd>X</BoardOrCommitteeApprovalInd>
+      <SeverancePaymentInd>0</SeverancePaymentInd>
+      <SupplementalNonqualRtrPlanInd>0</SupplementalNonqualRtrPlanInd>
+      <EquityBasedCompArrngmInd>0</EquityBasedCompArrngmInd>
+      <CompBasedOnRevenueOfFlngOrgInd>0</CompBasedOnRevenueOfFlngOrgInd>
+      <CompBsdOnRevRelatedOrgsInd>0</CompBsdOnRevRelatedOrgsInd>
+      <CompBsdNetEarnsFlngOrgInd>0</CompBsdNetEarnsFlngOrgInd>
+      <CompBsdNetEarnsRltdOrgsInd>0</CompBsdNetEarnsRltdOrgsInd>
+      <AnyNonFixedPaymentsInd>0</AnyNonFixedPaymentsInd>
+      <InitialContractExceptionInd>0</InitialContractExceptionInd>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>JOSEPH P CARDONE</PersonNm>
+        <TitleTxt>VICE PRESIDENT OF FINANCE</TitleTxt>
+        <BaseCompensationFilingOrgAmt>163274</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>17363</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>39781</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>220418</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>VINCENT L GRACCO</PersonNm>
+        <TitleTxt>VICE PRESIDENT OF SCIENTIFIC OPS</TitleTxt>
+        <BaseCompensationFilingOrgAmt>203529</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>35020</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>29088</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>267637</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>JULIE VAN DYKE</PersonNm>
+        <TitleTxt>SENIOR SCIENTIST</TitleTxt>
+        <BaseCompensationFilingOrgAmt>129010</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>13841</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>30928</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>173779</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>BETTY J DELISE</PersonNm>
+        <TitleTxt>CONTROLLER</TitleTxt>
+        <BaseCompensationFilingOrgAmt>125584</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>13144</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>16598</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>155326</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+      <RltdOrgOfficerTrstKeyEmplGrp>
+        <PersonNm>FORREST D BRAZE</PersonNm>
+        <TitleTxt>SENIOR SCIENTIST</TitleTxt>
+        <BaseCompensationFilingOrgAmt>142234</BaseCompensationFilingOrgAmt>
+        <CompensationBasedOnRltdOrgsAmt>0</CompensationBasedOnRltdOrgsAmt>
+        <BonusFilingOrganizationAmount>0</BonusFilingOrganizationAmount>
+        <BonusRelatedOrganizationsAmt>0</BonusRelatedOrganizationsAmt>
+        <OtherCompensationFilingOrgAmt>0</OtherCompensationFilingOrgAmt>
+        <OtherCompensationRltdOrgsAmt>0</OtherCompensationRltdOrgsAmt>
+        <DeferredCompensationFlngOrgAmt>31193</DeferredCompensationFlngOrgAmt>
+        <DeferredCompRltdOrgsAmt>0</DeferredCompRltdOrgsAmt>
+        <NontaxableBenefitsFilingOrgAmt>29625</NontaxableBenefitsFilingOrgAmt>
+        <NontaxableBenefitsRltdOrgsAmt>0</NontaxableBenefitsRltdOrgsAmt>
+        <TotalCompensationFilingOrgAmt>203052</TotalCompensationFilingOrgAmt>
+        <TotalCompensationRltdOrgsAmt>0</TotalCompensationRltdOrgsAmt>
+        <CompReportPrior990FilingOrgAmt>0</CompReportPrior990FilingOrgAmt>
+        <CompReportPrior990RltdOrgsAmt>0</CompReportPrior990RltdOrgsAmt>
+      </RltdOrgOfficerTrstKeyEmplGrp>
+    </IRS990ScheduleJ>
+    <IRS990ScheduleO documentId="RetDoc1044400001">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>PART III, LINE 4A, RESEARCH PROJECTS (CONTINUED)</FormAndLineReferenceDesc>
+        <ExplanationTxt>NEUROCOGNITIVE BASES OF TREATMENT RESISTANCE IN DEVELOPMENTAL DYSLEXIA: THIS PROJECT'S OVERARCHING GOAL IS TO PROVIDE THE FIRST DETAILED AND INTEGRATED NEUROBIOLOGICAL AND COGNITIVE CHARACTERIZATION OF DD TREATMENT RESISTERS, WHOSE RELATIVELY INTRACTABLE IMPAIRMENTS ARE LIKELY TO BE PRIMARILY BRAIN-BASED. NEUROBIOLOGICAL SIGNATURES OF PERCEPTION AND IMITATION OF AV SPEECH IN CHILDREN WITH ASD: THIS PROJECT EXAMINES THE NEURAL PROCESSES UNDERLYING AUDIOVISUAL SPEECH INTEGRATION AND FACIAL IMITATION IN CHILDREN WITH ASD, TYPICALLY DEVELOPING CHILDREN AND CHILDREN WITH EXPRESSIVE LANGUAGE IMPAIRMENTS. IMPROVING CLINICAL SPEECH REMEDIATION WITH ULTRASOUND TECHNOLOGY: SUBCONTRACT WITH THE CITY OF NEW YORK GRADUATE CENTER (CUNY) SIGN LANGUAGE ACQUISITION, ANNOTATION, ARCHIVING AND SHARING: THIS PROJECT WILL FOCUS ON PRODUCING COMPLETE ANNOTATIONS (TRANSCRIPTIONS) OF PREVIOUSLY COLLECTED LONGITUDINAL SAMPLES OF THE DEVELOPMENT OF AMERICAN SIGN LANGUAGE (ASL) BY PRESCHOOL AGED DEAF CHILDREN; ANALYZING THE DATA AT THE LEXICAL, MORPHOLOGICAL, AND LINGUISTIC LEVELS TO PROVIDE BENCHMARKS OF TYPICAL DEVELOPMENT; AND THEN MAKE BOTH THE ANNOTATED VIDEOS AND LINGUISTIC ANALYSES OF EACH SESSION AVAILABLE TO RESEARCHERS, TEACHERS OF THE DEAF, SIGN LANGUAGE TEACHERS, AND THE SIGN LANGUAGE COMMUNITY. NEUROCHEMISTRY AS A MODERATOR OF BRAIN NETWORKS FOR READING: THIS PROJECT WILL FOCUS ON PROVIDING LINKS BETWEEN BRAIN OSCILLATIONS, STRUCTURE, FUNCTION AND NEUROCHEMISTRY, CRITICAL FOR THE DEVELOPMENT OF A COMPREHENSIVE AND MECHANISTIC MODEL OF THE NEUROBIOLOGICAL UNDERPINNINGS OF READING DISABILITY (RD), A LIFE-LONG LEARNING DISORDER THAT AFFLICTS 12-18% OF THE NATION'S CHILDREN. THE PROPOSED RESEARCH WILL PROVIDE IMPORTANT FOUNDATIONAL KNOWLEDGE ABOUT BIOLOGICAL PATHWAYS, WHICH MAY SUGGEST PHARMACOLOGICAL AGENTS THAT CAN SUPPLEMENT AND ENHANCE EFFECTS FROM MORE CONVENTIONAL READING INTERVENTION. COLLABORATIVE RESEARCH: PROSODIC STRUCTURE: AN INTEGRATED EMPIRICAL AND MODELING INVESTIGATION: A COLLABORATIVE GRANT BETWEEN BOSTON UNIVERSITY, UNIVERSITY OF MICHIGAN AND USC. THE RESEARCH WILL INCLUDE CREATING MODELING SIMULATIONS, CONDUCTING ANALYSIS OF EXPERIMENTAL DATA AND PREPARING RESULTS FOR PUBLICATION. THE NEGATIVE BOLD RESPONSE IN SPEECH PRODUCTION AND PERSISTENT STUTTERING: THIS PROJECT IS THE FIRST STEP TOWARD DEVELOPING A NEURAL MECHANISTIC MODEL FOR STUTTERING WITH APPLICATION TO OTHER NEURODEVELOPMENTAL DISORDERS OF SPOKEN LANGUAGE PRODUCTION. NEUROCOGNITIVE BASES OF TREATMENT RESISTANCE IN DEVELOPMENTAL DYSLEXIA, DIVERSITY SUPPLEMENT: A SUPPLEMENT THAT SUPPORTS (1) THE DEVELOPMENT OF A NORMATIVE MODEL OF READING USING DEEP LEARNING FOR ORTHOGRAPHIC INPUT, IN ORDER TO ADVANCE NEUROCOMPUTATIONAL MODELING OF DEVELOPMENTAL DYSLEXIA. THIS WILL SUPPORT (2) AN EXPLORATION OF THE CAPABILITY OF THE MODEL TO CAPTURE INDIVIDUAL DIFFERENCES IN READING, WITH REGARDS TO DEVELOPMENTAL DYSLEXIA. STATISTICAL LEARNING WORKSHOP GRANT FOR FUTURE PROPOSAL: SUPPORT FOR TWO WORKSHOPS ON STATISTICAL LEARNING FOR A FUTURE PROPOSAL TO FUND AN INTERNATIONAL CENTER FOR RESEARCH ON STATISTICAL LEARNING. EXPERIENTIAL AND CHILD FACTORS THAT DETERMINE ACQUISITIONS OF ORTHOGRAPHICAL PHONOLOGICAL REGULARITIES IN A QUASI-REGULAR WRITING SYSTEM: AN INTEGRATED BEHAVIORAL/COMPUTATIONAL/NEUROBIOLOGICAL APPROACH: THIS PROJECT IS DESIGNED TO DEVELOP A COMPUTATIONAL (CONNECTIONIST) MODEL OF THE IMPACT OF SHORT-TERM WORD EXPOSURE AND FEEDBACK GRAIN-SIZE ON THE ACQUISITION OF CONTEXT-DEPENDENT O-P REGULARITIES AND ITS MODULATION BY EXPERIENTIAL AND CHILD-SPECIFIC FACTORS, FITTING THE MODEL AT BOTH THE POPULATION-AND INDIVIDUAL LEVEL (USING BEHAVIORAL AND NEUROIMAGING EXPERIMENTS). PROBABILISTIC COMPUTATION IN THE CORTEX OF THE DEVELOPING HUMAN BRAIN: A COLLABORATION OF BAYESIAN MODELS THAT HAVE BEEN SHOWN TO CAPTURE MANY OF THE KEY PROPERTIES OF HUMAN PERFORMANCE. THIS MODELING IS ESSENTIAL TO THE ANALYSIS OF FNIRS RECORDINGS OBTAINED FROM THE INFANT CORTEX. IDENTIFYING DYSLEXIA INTERVENTIONS FOR TREATMENT NON-RESPONDERS: THIS PROJECT IS TO DOCUMENT THE NEUROCOGNITIVE CHARACTERISTICS OF DEVELOPMENTAL DYSLEXIA (DD) TREATMENT RESISTERS THAT DIFFERENTIATE THEM FROM TREATMENT RESPONDERS AND TYPICALLY DEVELOPING READERS, BUT ALSO IDENTIFY THOSE ATTRIBUTES THAT ARE MOST RELEVANT TO PREDICTING DIFFERENTIAL OUTCOMES, INCLUDING THE IMPACT OF COMORBID SPECIFIC LANGUAGE IMPAIRMENTS (SLI) AND/OR ATTENTIONAL DEFICITS (ADHD). TRACKING NEUROCOGNITIVE CHANGES DURING EVIDENCE-BASED READING INSTRUCTION IN TYPICALLY AND ATYPICALLY DEVELOPING CHILDREN: THE PROPOSED RESEARCH EXAMINES THE NEUROCOGNITIVE BASES OF TREATMENT RESPONSE TO A WELL-ESTABLISHED EVIDENCE-BASED TREATMENT PROGRAM. PRE- AND POST-TREATMENT NEUROIMAGING IS USED AND, FOR THE FIRST TIME, FREQUENT NEUROIMAGING IS USED DURING THE COURSE OF TREATMENT 1) TO GAIN NEW INSIGHTS INTO HOW EVIDENCE BASED TREATMENT MODULATES BRAIN ORGANIZATION FOR LITERACY, LANGUAGE LEARNING, AND REMEDIATION; AND 2) WHY IT FAILS TO DO SO FOR SOME CHILDREN. THE FLORIDA LEARNING DISABILITIES RESEARCH CENTER: THIS PROJECT WILL HAVE A KEY TEAM OF RESEARCHERS ASSEMBLE, USING THEIR BROAD COLLABORATIVE NETWORK, A LARGE-SCALE DATA SET, ALLOWING FOR AN INVESTIGATION OF THE GENE-BRAIN CONNECTIONS IN SRD. STATISTICAL APPROACHES TO LINGUISTIC PATTERN LEARNING: THE SCOPE OF THE AWARD IS TO CONDUCT STUDIES OF ADULTS AND 5- TO 7- YEAR-OLD CHILDREN ON VISUAL-MOTOR TASKS THAT MIMIC THE STRUCTURAL PATTERNS PRESENT IN NATURAL-LANGUAGE LEARNING. PA TRAINING AND TECHNICAL ASSISTANCE NETWORK: THIS PROJECT OFFERS ADVISORY SERVICES TO MEET THE SPECIFIC NEEDS IDENTIFIED BY THE BUREAU OF SPECIAL EDUCATION (BSE) IN THE AREAS OF THE DYSLEXIA AND EARLY LITERACY INTERVENTION PILOT PROGRAM IN THE STATE OF PENNSYLVANIA. THE FLORIDA LEARNING DISABILITIES RESEARCH CENTER (II): THIS GRANT IS FOR ADDITIONAL EFFORT FOR SENIOR SCIENTIST TO MANAGE ALL WORK ASSOCIATED WITH THE ADMINISTRATIVE CORE AT THE HASKINS LABORATORIES SITE. THEY WILL COORDINATE AND MANAGE DATA STORAGE AND ANALYSIS AND BE THE LIAISON BETWEEN HASKINS LABS AND FLORIDA STATE UNIVERSITY (FSU).</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION A, LINE 8B</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE ORGANIZATION DOES NOT HAVE ANY COMMITTEES WITH AUTHORITY TO ACT ON BEHALF OF THE GOVERNING BODY.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION B, LINE 11B</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE FORM 990 IS REVIEWED BY THE VICE PRESIDENT OF FINANCE AND ADMINISTRATION AND THE PRESIDENT PRIOR TO FILING.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION B, LINE 12C</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE CONFLICT OF INTEREST STATEMENT IS SIGNED OFF BY EACH DIRECTOR AND EMPLOYEE ANNUALLY. THE PRESIDENT OR CEO WILL REVIEW THE EMPLOYEES' SUBMITTED DOCUMENT. THE CHAIRMAN OF THE BOARD WILL REVIEW THE PRESIDENT AND CEO'S SUBMITTED DOCUMENT. EACH DIRECTOR'S SUBMITTED DOCUMENT IS REVIEWED BY ALL OTHER REMAINING DIRECTORS.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION B, LINE 15</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE COMPENSATION COMMITTEE REVIEWS COMPENSATION LEVELS THROUGH COMPARISONS WITH SALARY AND WAGE DATA PROVIDED BY THE ASSOCIATION OF INDEPENDENT RESEARCH INSTITUTES. THE COMPENSATION COMMITTEE MAKES RECOMMENDATIONS WHICH GO TO THE BOARD OF DIRECTORS FOR FINAL APPROVAL. THE PROCESS IS CONTEMPORANEOUSLY DOCUMENTED.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>FORM 990, PART VI, SECTION C, LINE 19</FormAndLineReferenceDesc>
+        <ExplanationTxt>THE ORGANIZATION MAKES ITS GOVERNING DOCUMENTS, CONFLICT OF INTEREST POLICY AND FINANCIAL STATEMENTS AVAILABLE TO THE PUBLIC UPON REQUEST.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+    <IRS990ScheduleR documentId="RetDoc1043400001">
+      <IdRelatedTaxExemptOrgGrp>
+        <DisregardedEntityName>
+          <BusinessNameLine1Txt>HASKINS LABORATORIES INC RETIREE VEBA PLAN</BusinessNameLine1Txt>
+        </DisregardedEntityName>
+        <USAddress>
+          <AddressLine1Txt>300 GEORGE STEET</AddressLine1Txt>
+          <CityNm>NEW HAVEN</CityNm>
+          <StateAbbreviationCd>CT</StateAbbreviationCd>
+          <ZIPCd>06511</ZIPCd>
+        </USAddress>
+        <EIN>061439510</EIN>
+        <PrimaryActivitiesTxt>POSTRETIREMENT HEALTH PLAN</PrimaryActivitiesTxt>
+        <LegalDomicileStateCd>NY</LegalDomicileStateCd>
+        <ExemptCodeSectionTxt>501(C)(9)</ExemptCodeSectionTxt>
+        <DirectControllingEntityName>
+          <BusinessNameLine1Txt>HASKINS LABORATORIES INC</BusinessNameLine1Txt>
+        </DirectControllingEntityName>
+        <ControlledOrganizationInd>1</ControlledOrganizationInd>
+      </IdRelatedTaxExemptOrgGrp>
+      <ReceiptOfIntAnntsRntsRyltsInd>0</ReceiptOfIntAnntsRntsRyltsInd>
+      <GiftGrntOrCapContriToOthOrgInd>0</GiftGrntOrCapContriToOthOrgInd>
+      <GiftGrntCapContriFromOthOrgInd>0</GiftGrntCapContriFromOthOrgInd>
+      <LoansOrGuaranteesToOtherOrgInd>0</LoansOrGuaranteesToOtherOrgInd>
+      <LoansOrGuaranteesFromOthOrgInd>0</LoansOrGuaranteesFromOthOrgInd>
+      <DivRelatedOrganizationInd>0</DivRelatedOrganizationInd>
+      <AssetSaleToOtherOrgInd>0</AssetSaleToOtherOrgInd>
+      <AssetPurchaseFromOtherOrgInd>0</AssetPurchaseFromOtherOrgInd>
+      <AssetExchangeInd>0</AssetExchangeInd>
+      <RentalOfFacilitiesToOthOrgInd>0</RentalOfFacilitiesToOthOrgInd>
+      <RentalOfFcltsFromOthOrgInd>0</RentalOfFcltsFromOthOrgInd>
+      <PerformOfServicesForOthOrgInd>1</PerformOfServicesForOthOrgInd>
+      <PerformOfServicesByOtherOrgInd>0</PerformOfServicesByOtherOrgInd>
+      <SharingOfFacilitiesInd>1</SharingOfFacilitiesInd>
+      <PaidEmployeesSharingInd>1</PaidEmployeesSharingInd>
+      <ReimbursementPaidToOtherOrgInd>0</ReimbursementPaidToOtherOrgInd>
+      <ReimbursementPaidByOtherOrgInd>0</ReimbursementPaidByOtherOrgInd>
+      <TransferToOtherOrgInd>1</TransferToOtherOrgInd>
+      <TransferFromOtherOrgInd>0</TransferFromOtherOrgInd>
+    </IRS990ScheduleR>
+  </ReturnData>
+</Return>
