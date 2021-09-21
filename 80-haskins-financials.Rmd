@@ -6,7 +6,8 @@ subtitle: |
 author: David Braze
     
 date: |
-  `r format(Sys.time(), '%B %d, %Y')`
+  September 6, 2021
+##  `r format(Sys.time(), '%B %d, %Y')`
 
 abstract: |
   Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
@@ -159,7 +160,7 @@ reacpi.fig
 
 ```
 
-In Figure \@ref(fig:revenue-expenses-assets-nihfunding), I've added a line to Figure  \@ref(fig:revenue-expenses-assets) representing NIH grant money received by the labs. I've done this even though, as best I can determine, IRS annual data and NIH annual data use slightly different fiscal years. IRS 990 data corresponds to the calendar year; the IRS allows other options, but Haskins uses a calendar year for its filings. The NIH fiscal year runs from October through September and fiscal years are labeled according the year in which they end. Nonetheless, It is a useful comparison. Figure  \@ref(fig:revenue-expenses-assets-nihfunding) also includes NIH data one year forward and and one year back from IRS data, just because. Keep in mind that the amounts represented by _NIH Total Costs_ are already included in the _Revenue_ curve. NIH Total Costs is the sum of direct + indirect funds for all NIH grants where Haskins is the primary grantee; subawards to Haskins, where the primary grant goes to another organization and Haskins is a sub-contractor, are not included in this quantity. It is clear that NIH Total Costs are a significant proportion of total revenue in each year, but the proportion varies considerably, and declines rather dramatically over the most recent 3 years.
+In Figure \@ref(fig:revenue-expenses-assets-nihfunding), I've added a line to Figure  \@ref(fig:revenue-expenses-assets) representing NIH grant money received by the labs. I've done this even though, as best I can determine, IRS annual data and NIH annual data use slightly different fiscal years. IRS 990 data corresponds to the calendar year; the IRS allows other options, but Haskins uses a calendar year for its filings. The NIH fiscal year runs from October through September and fiscal years are labeled according the year in which they end. Nonetheless, it is a useful comparison. Figure  \@ref(fig:revenue-expenses-assets-nihfunding) also includes NIH data one year forward and and one year back from IRS data, just because. Keep in mind that the amounts represented by _NIH Total Costs_ are already included in the _Revenue_ curve. NIH Total Costs is the sum of direct + indirect funds for all NIH grants where Haskins is the primary grantee; subawards to Haskins, where the primary grant goes to another organization and Haskins is a sub-contractor, are not included in this quantity. It is clear that NIH Total Costs are a significant proportion of total revenue in each year, but the proportion varies considerably, and declines rather dramatically over the most recent 3 years.
 
 ```{r revenue-expenses-assets-nihfunding, include=TRUE, fig.cap=reanih.cap}
 
@@ -187,7 +188,7 @@ revenue.fig
 
 ## Haskins Expenses
 
-Figure \@ref(fig:expense-breakdown) shows the partitioning of Haskins Expenses by IRS defined category. Inspection of the figure makes clear that salaries are the single largest expense over the period under consideration. 'Other Expenses' is second largest. Grants from Haskins to others are a smaller but still non-trivial expense in each year. These are divided into two categories: Grants to Organizations, and 'Other Grants'. The first category seems fairly straightforward, but it is not clear to me what would fall into the second. Regardless, more information on Haskins grant-making activities can be found in Schedule I, for grants to US based organizations, and in Schedule F, for international grants [@i990_schedf @i990_schedi]. Read on. 
+Figure \@ref(fig:expense-breakdown) shows the partitioning of Haskins Expenses by IRS defined category. Inspection of the figure makes clear that salaries are the single largest expense over the period under consideration. 'Other Expenses' is second largest. Grants from Haskins to others are a smaller but still non-trivial expense in each year. These are divided into two categories: Grants to Organizations, and 'Other Grants'. The first category seems fairly straightforward, but it is not clear to me what would fall into the second. Regardless, more information on Haskins grant-making activities can be found in Schedule I, for grants to US based organizations, and in Schedule F, for international grants [@i990_schedf; @i990_schedi]. Read on. 
 
 ```{r expense-breakdown, include=TRUE, fig.cap=expense.cap}
 
@@ -299,7 +300,7 @@ TODO: Another useful view would be to sort grants by **first** year of activity.
 
 ```{r pi-activity, include=TRUE, fig.height=8.5, fig.cap=pi.activity.cap}
 
-pi.activity.cap <- "Years in which each primary investigator has grant income. PIs are sorted by final year of activity within depicted span. This chart indicates grant activity at Haskins only. A PI's grant activity at other organizations is not included here. Co-PIs are shown as composite individuals. Note years in which a PI has grant income only through unfunded extensions are not included."
+pi.activity.cap <- "Years in which each primary investigator generated revenue to Haskins through one or more grants are indicated with solid points. PIs are sorted by final year of activity within depicted time span. This chart indicates grant activity at Haskins only; a PI's grant activity at other organizations is not included here. Co-PIs are shown as composite individuals. Note that years in which a PI has grant income only through unfunded extensions will be blank (no points)."
 
 pi.activity
 
