@@ -6,8 +6,8 @@ subtitle: |
 author: David Braze
     
 date: |
-  September 6, 2021
-##  `r format(Sys.time(), '%B %d, %Y')`
+##  September 6, 2021
+  `r format(Sys.time(), '%B %d, %Y')`
 
 abstract: |
   Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
@@ -16,7 +16,7 @@ abstract: |
 
   Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Nunc rutrum turpis sed pede.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Nunc porta vulputate tellus.  Sed bibendum.  Donec at pede.  Vivamus id enim.  
   
-  **Keywords**: Haskins Laboratories, IRS form 990, non-profit organization, NIH Exporter, public data
+  **Keywords**: public data, non-profit organizations, Internal Revenue Service, IRS form 990, Propublica Nonprofit Explorer, National Institutes of Health, NIH Exporter, NIH grants, Haskins Laboratories
   
   \pagebreak
 
