@@ -1,0 +1,17 @@
+## ignore these patterns in the root, but not subdirs
+nul
+
+## ignore these folders
+irs990/*
+nih-exporter/*
+figures/*
+archive/*
+
+## ignore files matching these patterns everywhere
+*~
+*_cache
+*_files
+*.log
+*.md
+*.URL
+*.tex
