@@ -6,20 +6,22 @@ subtitle: |
 author: David Braze
     
 date: |
-##  September 6, 2021
-  `r format(Sys.time(), '%B %d, %Y')`
+  September 6, 2021
+ # `r format(Sys.time(), '%B %d, %Y')`
 
 abstract: |
   Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
 
   Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  In id erat non orci commodo lobortis.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
 
-  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Nunc rutrum turpis sed pede.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Nunc porta vulputate tellus.  Sed bibendum.  Donec at pede.  Vivamus id enim.  
+  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Nunc rutrum turpis sed pede.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Nunc porta vulputate tellus.  Sed bibendum.  Donec at pede.  Vivamus id enim. 
+
+  \vspace{1cm}
   
   **Keywords**: public data, non-profit organizations, Internal Revenue Service, IRS form 990, Propublica Nonprofit Explorer, National Institutes of Health, NIH Exporter, NIH grants, Haskins Laboratories
-  
-  \pagebreak
 
+  \pagebreak
+  
 always_allow_html: false
   
 bibliography: ["hl-fin.bib"]
@@ -57,7 +59,6 @@ output:
 
 ---
 
-\pagebreak
 
 ```{r init, echo=FALSE, include=FALSE}
 ## Use the makefile to update this document
@@ -128,6 +129,9 @@ source(here("01-load-data.R"))
 source(here("02-outputs.R"))
 
 ```
+
+\pagebreak
+
 # Preliminaries
 
 This document is an exercise in working with data from two main sources. The first source is IRS form 990, "Return of Organization Exempt from Income Tax." The 990 is an informational form that non-profit organizations (NPO) must file with the Internal Revenue Service (IRS) each year [@i990_instructions]. The completed forms are publicly available records as a matter of federal (law? policy?). The second source of information used here is details of individual grants from National Institutes of Health (NIH). The NIH Exporter gives access to information about all individual grants made by the NIH [@nih_exporter]. That information includes the direct and indirect moneys paid to grantees each year for each grant. 
@@ -138,7 +142,9 @@ NIH grant data can be downloaded from the [NIH Exporter web tool](https://export
 
 In digging into what can be gleaned from these data sources, I will use the Haskins Laboratories as a case study. Why Haskins Labs? First, because there is both IRS data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so is required to file an IRS 990 each year, and has been filing those documents electronically since 2014; all NPOs are required to file electronically starting in 2019. Electronic filing is significant for present purposes because it means that the 990 data is available in XML format, making it easy to access. Form 990s that have been filed as paper documents are only available as scanned PDF files, often not of very good quality. This makes data extraction error prone and tedious (but not impossible!). With regard to grant data, Haskins is a research organization and has received significant NIH research funding each year since at least 1970. So, there is a wealth of information about the grants that NIH has made to Haskins over the years available in the NIH ExPORTER database.
 
-A second reason for using Haskins records in this exercise is more personal. I was a senior scientist on the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. Certainly, there are other accounts of the lab's history which are both more detailed and more human than what can be gleaned from federal databases [cf. @fowler_language_2021; @fowler_oral_history]. As previously noted, information from documents filed with the IRS is only easily accessible from 2014 forward. As I write (September, 2021), the most recent IRS 990 available is for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records may provide a useful complement to other views of Haskins' history.
+A second reason for using Haskins records in this exercise is more personal. I was a senior scientist on the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. Certainly, there are other accounts of the lab's history which are both more detailed and more human than what can be gleaned from these federal databases [cf. @fowler_language_2021; @fowler_oral_history]. As previously noted, information from documents filed with the IRS is only easily accessible from 2014 forward. As I write (September, 2021), the most recent IRS 990 available is for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records might provide an interesting complement to other views of Haskins' history, but constructing an overview of Haskins history is not really my goal. I'm simply using my connection to the labs as one source of motivation for exploring these databases.
+
+The real point of this exercise is simply to pick the lowest hanging fruit out of all that might be gleaned from these two sources. I am in no way trying for a comprehensive exploration of the data. The  summaries (figures and tables) that I provide here are best thought of as rough and simple overviews of the source data. They are not tailored to any particular goal. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of organizations, or both.
 
 # Summary of IRS i990s
 
@@ -225,16 +231,17 @@ intl.grants.fig
 
 ## Directors, Officers, & Key Employees
 
+Tables in this section are based on information from i990 Part VII, which identifies several categories of individuals having particularly significant roles within each NPO. These categories include: members of the board of directors, officers of the corporation, key employees, and highly compensated employees. 
 
-Tables in this section are based on information from i990 Part VII. The tables are a bit rough. Sort order can be improved (a secondary sort on first year of service?) And, rather than 0s and 1s in the table cells, I'd like to put an indication of each individual's specific role. 
+One of the challenges in dealing with named individuals in form 990s, of whatever category, is that when the same individual is mentioned across multiple years, their name is not always rendered consistently. One common issue is to do with middle names. Sometimes these are included in full, sometimes as initial only, sometimes they will be omitted altogether. Other variations do crop up as well. A similar problem exists for titles/roles. In the case either of names or of roles, if you want to make use of these as *data*, then there is a certain amount of work that must be done up-front to ensure that they are properly normalized.
 
 ### Directors
 
-Table \@ref(tab:directors) shows board members (Directors) over time. A '1' indicates the person was listed as a Director on that year's i990. Note that, as is usual in non-profit organizations, the President/CEO of the organization is an _ex officio_ member of the Board of Directors. So, Dr. Pugh is listed on both Table \@ref(tab:directors) and Table \@ref(tab:corporate-officers). P. Rubin and A. Abramson also appear in both tables. They each served terms as corporate officers and as members of the board, but their terms as directors and as officers did not overlap.
+Table \@ref(tab:directors) shows board members (Directors) over time and their roles on the board as listed on each year's IRS form 990. Note that, as is usual in non-profit organizations, the President/CEO of the organization is an _ex officio_ member of the Board of Directors. So, Dr. Pugh is listed on both Table \@ref(tab:directors) and Table \@ref(tab:corporate-officers). P. Rubin and A. Abramson also appear in both tables. They each served terms as corporate officers and as members of the board, but their terms as directors and as officers did not overlap.
 
 ```{r directors, include=TRUE}
 
-director.tbl.cap <- "Board members over time. A '1' indicates the person was listed as a Director on that year's IRS i990."
+director.tbl.cap <- "Board members over time and their roles on the board as listed on each year's form 990. CHAIR = chairperson; DIR = director; PCH = past chairperson; SEC = secretary of the board; TRE = treasurer."
 
 format_table(caption = director.tbl.cap, director.tbl)
 
@@ -242,12 +249,13 @@ format_table(caption = director.tbl.cap, director.tbl)
 
 ### Corporate Officers
 
-Table \@ref(tab:corporate-officers) shows Haskins Laboratories' corporate officers over time. A '1'    indicates the person was listed as an officer on that year's i990. Note that Arthur Abramson passed away in December of 2017 [@abramson_obit], although he is still listed as an officer in subsequent years.
+Table \@ref(tab:corporate-officers) shows Haskins Laboratories' corporate officers over time, and their roles, as listed on each year's IRS form 990. Note that Arthur Abramson passed away in December of 2017 [@abramson_obit], although he is still listed as an officer (Coporate Secretary) in subsequent years.
+
+Office of the Connecticut Secretary of the State (HL is registered in CT) makes business filings publicly available on its website (e.g., https://service.ct.gov/business/s/onlinebusinesssearch?businessName=haskins%20laboratories). So with a little work, it will be possible to link and compare information from IRS 990s with information, including details about officers, from a business's filings with the SotS. Unfortunately, not all states are similarly transparent in making corporate filings so easily accessible.
 
 ```{r corporate-officers, include=TRUE}
 
-officers.tbl.cap <- "Corporate officers (not officers of the board) over time. A '1' indicates the person was listed as an officer on that year's i990. Note that Arthur Abramson passed away in December of 2017."
-
+officers.tbl.cap <- "Corporate officers (not officers of the board) over time. CEO = Chief Executive Officer; PRES = President; SEC = Corporate Secretary; VP = Vice President; VPF = Vice President of Finance; VPR = Vice President of Research; VPSO = Vice President of Scientific Operations. Note that Arthur Abramson passed away in December of 2017."
 
 format_table(caption = officers.tbl.cap, officers.tbl)
 
@@ -296,17 +304,22 @@ grant.activity
 
 Figure \@ref(fig:pi-activity) shows the years in which each primary investigator has grant income. The figure shows grant activity at Haskins Laboratories only. Any grant activity at other organizations is not included here. Two instances of Co-PIs are indicated as composite individuals. Note years in which a PI has grant income only through unfunded extensions are not included included here. Grants are sorted by last year of activity so that grants with more recent funding are closer to the bottom. 
 
-TODO: Another useful view would be to sort grants by **first** year of activity. This would make it easy to see the number of grant starts in each fiscal year.
+As with IRS form 990 data, PI names are sometimes not consistently rendered in the NIH grants database. That is, when the same individual is mentioned across multiple grants/years, their name is not always rendered consistently. Middle names are a common source of problems. Sometimes these are included in full, sometimes as initial only, sometimes they will be omitted altogether. Married names are another common source of discrepancies. Unlike the IRS, the NIH has included a unique numerical ID for PIs, `pi_ids`, which *should* be consistent across name variations. If the goal is to combine data using names of individuals across IRS and NIH sourced data, there is even more work to be done. For example, names from IRS 990s are typically in first_name last_name order, but the NIH database lists PI names as last_name, first_name. 
+
+TODO: Another useful view would be to sort grants by **first** year of activity. This would highlight the number of grant starts in each fiscal year.
 
 ```{r pi-activity, include=TRUE, fig.height=8.5, fig.cap=pi.activity.cap}
 
-pi.activity.cap <- "Years in which each primary investigator generated revenue to Haskins through one or more grants are indicated with solid points. PIs are sorted by final year of activity within depicted time span. This chart indicates grant activity at Haskins only; a PI's grant activity at other organizations is not included here. Co-PIs are shown as composite individuals. Note that years in which a PI has grant income only through unfunded extensions will be blank (no points)."
+pi.activity.cap <- "Years in which each primary investigator generated revenue to Haskins through one or more NIH grants are indicated with solid points. PIs are sorted by final year of activity within depicted time span. This chart indicates only NIH grant activity at Haskins; possible funding from sources is not included, nor is a PI's grant activity at other organizations. Co-PIs are shown as composite individuals. Note that a year in which a PI has grant income only through unfunded extensions will be blank (no point)."
 
 pi.activity
 
 ``` 
 
 ### Total Number of Grants & Grant Income per PI 
+
+TODO: insert table of grant count and grant income by PI and year
+
 
 \pagebreak
 
@@ -332,7 +345,7 @@ TODO: Show effective F&A rate as a percentation of Total Costs. Although, grante
 
 # Appendix A: Analysis Software {#r-packages}
 
-All data summaries and analyses in this report were carried out using the _R_ statistical environment, version `r paste(version$major, version$minor, sep=".")` [@cite_R]. The report itself was produced using an Rmarkdown workflow. The following table lists the non-base R packages used in building the report. To see a full citation for a particular package, assuming you have both _R_ and the particular package installed, call (e.g.) _citation(dplyr)_ from the _R_ prompt. 
+All data summaries and analyses in this report were carried out using the _R_ statistical environment, version `r paste(version$major, version$minor, sep=".")` [@cite_R]. The report itself was produced using an Rmarkdown workflow. The following table lists the non-base R packages used in building the report. To see a full citation for a specific package, assuming you have both _R_ and the particular package installed, call (e.g.) _citation(dplyr)_ from the _R_ prompt. 
 
 ```{r r-package-tab, include=TRUE}
 

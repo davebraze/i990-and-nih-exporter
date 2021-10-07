@@ -36,7 +36,7 @@ tidy:
 
 noreports:
 	# delete formatted reports
-	rm -f $(fname).html $(fname).pdf $(fname).docx
+	rm -f $(outname).html $(outname).pdf $(outname).docx
 
 clean:
 	make nocache

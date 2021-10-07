@@ -307,30 +307,53 @@ partvii.personnel <- map_dfr(xml.990, get_990_partvii)
 director.tbl <-
     partvii.personnel %>%
     filter(IndividualTrusteeOrDirectorInd) %>%
-    select(PersonNm, tax.year)  %>%
+    select(PersonNm, tax.year, TitleTxt)  %>%
+    mutate(TitleTxt = fct_recode(TitleTxt,
+                                 DIR = "PRESIDENT", ## KP is a director
+                                 SEC = "SECRETARY OF THE BOARD",
+                                 DIR = "DIRECTOR",
+                                 TRE = "TREASURER",
+                                 SEC = "SECRETARY",
+                                 PCH = "PAST CHAIR",
+                                 )) %>%
     group_by(PersonNm) %>%
     mutate(last_year_of_service = max(tax.year)) %>%
     ungroup() %>%
     mutate(PersonNm = fct_reorder(PersonNm, last_year_of_service, .desc=FALSE)) %>%
+    arrange(last_year_of_service) %>%
     select(-last_year_of_service) %>%
-    table()
-
+    pivot_wider(names_from=tax.year, values_from=TitleTxt) %>%
+    rename(` ` = PersonNm)
 
 ## table of corporate officers (not officers of the board) over time
 ## default sort order is not ideal
 officers.tbl <-
     partvii.personnel %>%
-    filter(OfficerInd) %>%
-    ## need special handling for KRP, who is a director and corporate officer, but not an officer of the BOD
-    filter(IndividualTrusteeOrDirectorInd == FALSE | TitleTxt == "PRESIDENT") %>%
-    select(PersonNm, tax.year) %>%
+    filter(OfficerInd,
+           ## special handling for KRP, who is a director & corp officer, but not an officer of the BOD
+           IndividualTrusteeOrDirectorInd == FALSE | TitleTxt == "PRESIDENT") %>%
+    select(PersonNm, tax.year, TitleTxt)  %>%
+    mutate(TitleTxt = fct_recode(TitleTxt,
+                                 PRES = "PRESIDENT",
+                                 VPR = "VICE PRESIDENT OF RESEARCH",
+                                 VPSO = "VICE PRESIDENT OF SCIENTIFIC OPERATIONS",
+                                 VPSO = "VICE PRESIDENT OF SCIENTIFIC OPS",
+                                 VPSO = "VICE PRESIDENT OF SCIENTIF",
+                                 VPF = "VICE PRESIDENT OF FINANCE",
+                                 SEC = "PAST SECRETARY/CORP SECRETARY",
+                                 SEC = "PAST SECRETARY/CORP SECRET",
+                                 SEC = "CORPORATE SECRETARY",
+                                 `CEO,VP` = "CEO AND VICE PRESIDENT",
+                                 VP = "PAST CEO AND VICE PRESIDENT"
+                                 )) %>%
     group_by(PersonNm) %>%
     mutate(last_year_of_service = max(tax.year)) %>%
     ungroup() %>%
     mutate(PersonNm = fct_reorder(PersonNm, last_year_of_service, .desc=FALSE)) %>%
+    arrange(last_year_of_service) %>%
     select(-last_year_of_service) %>%
-    crossing() %>%
-    table()
+    pivot_wider(names_from=tax.year, values_from=TitleTxt) %>%
+    rename(` ` = PersonNm)
 
 
 ## table of highly compensated employees who are not officers
