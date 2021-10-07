@@ -255,7 +255,7 @@ Office of the Connecticut Secretary of the State (HL is registered in CT) makes 
 
 ```{r corporate-officers, include=TRUE}
 
-officers.tbl.cap <- "Corporate officers (not officers of the board) over time. CEO = Chief Executive Officer; PRES = President; SEC = Corporate Secretary; VP = Vice President; VPF = Vice President of Finance; VPR = Vice President of Research; VPSO = Vice President of Scientific Operations. Note that Arthur Abramson passed away in December of 2017."
+officers.tbl.cap <- "Corporate officers (not officers of the board) over time. CEO = Chief Executive Officer; PRES = President; SEC = Corporate Secretary; VP = Vice President; VPF = VP of Finance & Administration; VPR = VP of Research; VPSO = VP of Scientific Operations. Note that Arthur Abramson passed away in December of 2017."
 
 format_table(caption = officers.tbl.cap, officers.tbl)
 
