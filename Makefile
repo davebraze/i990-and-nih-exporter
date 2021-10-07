@@ -2,7 +2,7 @@ R_OPTS = --vanilla
 fname = 80-haskins-financials
 rmd = .Rmd
 source = $(fname)$(rmd)
-outname = haskins-financials
+outname = haskins-financials 
 
 date:
 	date.exe "+%Y%m%d"
