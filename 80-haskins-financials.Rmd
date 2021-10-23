@@ -55,7 +55,7 @@ output:
     number_sections: no
     pandoc_args:
     - --lua-filter
-    - "c:/Program Files/R/R-3.6.1/library/rmarkdown/rmd/lua/pagebreak.lua"
+    - "C:/Users/daveb/R/win-library/4.1/rmarkdown/rmarkdown/lua/pagebreak.lua"
 
 ---
 
@@ -253,9 +253,11 @@ Table \@ref(tab:corporate-officers) shows Haskins Laboratories' corporate office
 
 Office of the Connecticut Secretary of the State (HL is registered in CT) makes business filings publicly available on its website (e.g., https://service.ct.gov/business/s/onlinebusinesssearch?businessName=haskins%20laboratories). So with a little work, it will be possible to link and compare information from IRS 990s with information, including details about officers, from a business's filings with the SotS. Unfortunately, not all states are similarly transparent in making corporate filings so easily accessible.
 
+Another possible source of linking information, one that may be more peculiar to Haskins Labs than it is of general utility, is the [Open Payrolls](https://openpayrolls.com/) website [@openpayrolls_2021]. Open Payrolls aggregates payroll information for public employees at the local, state, and federal level. At least some of Haskins corporate officers serve in their roll at the labs as a side hustle, whereas their day jobs are as faculty members at public colleges or universities. So if an officer's Haskins salary, as reported on its IRS 990s, seems low, there may be more to see at Open Payrolls.
+
 ```{r corporate-officers, include=TRUE}
 
-officers.tbl.cap <- "Corporate officers (not officers of the board) over time. CEO = Chief Executive Officer; PRES = President; SEC = Corporate Secretary; VP = Vice President; VPF = VP of Finance & Administration; VPR = VP of Research; VPSO = VP of Scientific Operations. Note that Arthur Abramson passed away in December of 2017."
+officers.tbl.cap <- "Corporate officers (not officers of the board) over time. CEO = Chief Executive Officer; PRES = President; SEC = Corporate Secretary; VP = Vice President; VPF = VP of Finance \\& Administration; VPR = VP of Research; VPSO = VP of Scientific Operations. Note that Arthur Abramson passed away in December of 2017."
 
 format_table(caption = officers.tbl.cap, officers.tbl)
 
