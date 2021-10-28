@@ -1,2 +1,3 @@
-nih-exporter/* linguist-vendored
-irs990/* linguist-vendored
+*.js linguist-vendored
+*.css linguist-vendored
+*.html linguist-vendored
