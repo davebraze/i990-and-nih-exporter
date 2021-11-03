@@ -1,11 +1,11 @@
-R_OPTS := --vanilla
+R.OPTS := --vanilla
 fname := 80-haskins-financials
 rmd := .Rmd
 source := $(fname)$(rmd)
 outname := haskins-financials
 date := $(shell date "+%Y%m%d")
 
-.phoney: help html pdf slides nocache tidy noreports clean
+.phoney: help html pdf slides nocache nopartials noreports clean
 ## Few targets correspond to files, so, list them here to ensure they always run.
 
 ## TODO:
@@ -50,8 +50,8 @@ nocache:
 # delete cache files
 	rm -rf $(fname)_cache $(fname)_files
 
-tidy:
-# delete intermediate files creating by knitting to pdf
+nopartials:
+# delete partial products of knitting to pdf
 	rm -f $(fname).aux $(outname).log $(fname).out
 	rm -f $(fname).tex $(fname).toc
 	rm -f $(fname).md $(fname).knit.md $(fname).utf8.md
