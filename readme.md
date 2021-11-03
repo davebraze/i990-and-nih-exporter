@@ -4,4 +4,8 @@ The code in this repository is an exercise in working with public data from two 
 
 NIH grant data can be downloaded from the [NIH Exporter web tool](https://exporter.nih.gov/). The data files are available for each fiscal year since 1985 in either CSV or XML format. A convenient place to get IRS 990s is from the [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/). It is necessary to search for the particular NPOs you are interested in, and individually download form 990s for each tax year of interest. The form for a specific NPO/tax-year will be available either as a scanned PDF, if it was filed as a paper document, or as an XML file, if it was filed electronically. All NPOs are required to file electronically from 2019 forward. 
 
-Note that this repo does NOT contain the NIH or IRS data files themselves, since they are a bit large, and can be obtained elsewhere. 
+Note that this repo does NOT contain the NIH or IRS data files themselves, since they are a bit large, and can be obtained elsewhere. Other public data referenced here includes:
+
+  * [Connecticut SotS database of businesses](https://service.ct.gov/business/s/onlinebusinesssearch?businessName=haskins%20laboratories)
+  * Public Employee salaries at  [Open Payrolls](https://openpayrolls.com/)
+  * [US Bureau of Labor Statistics consumer price index data](https://download.bls.gov/pub/time.series/cu/cu.series)
