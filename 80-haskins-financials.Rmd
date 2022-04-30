@@ -1,7 +1,7 @@
 ---
-title: Doodling with IRS 990s and NIH Exporter Data
+title: Doodling with IRS 990 \& NIH Grant Data
 subtitle: |
-  Haskins Laboratories, a case study
+  A Case Study
   
 author: David Braze
     
@@ -11,22 +11,23 @@ date: |
 
 abstract: |
 
-  This document is an example of what can be gleaned from two distinct main sources of information available from the federal government. First is the IRS form 990, "Return of Organization Exempt from Income Tax." The second is details of individual grants from National Institutes of Health (NIH). 
+  This document is an example of what can be culled from two distinct sources of information available from the federal government. The first is the IRS form 990, "Return of Organization Exempt from Income Tax." The second is details of individual grants from National Institutes of Health. 
 
-  Haskins Laboratories serves as a case study. Why Haskins? Because there is both IRS data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so must file an IRS 990 each year, and it is a research organization that has received significant NIH research funding each year since at least 1970.
+  Haskins Laboratories serves as a case study. Why Haskins? Because there is both IRS 990 data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so must file an IRS 990 each year. It is also a research organization that has received significant NIH funding each year since at least 1970.
 
-  Some other NPOs do get significant NIH funding. But, most of them are large, complicated, organizations (e.g., Yale University). Haskins, on the other hand, is small enough that one can use these data sources to understand something about its financial history without too much effort.
+  Some other NPOs do get significant NIH funding. But, most of them are large, complicated, organizations (e.g., Yale University). Haskins, on the other hand, is small enough that one can use information about it contained in these public data sources to understand something about its financial history, without too much effort.
   
-  I also have a personal reason. A big part of my professional career was spent at Haskins. I was a member the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. In reality, I'm using my connection to the labs as a source of motivation for exploring these federal databases.
+  I also have a personal reason for focusing on Haskins. A big part of my professional career was spent at there. I was employed as a member Haskins' research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public databases. My connection to the labs is a source of inspiration for exploring these federal databases.
 
-  The real point of the exercise is to pick the lowest hanging fruit from all that might be gathered from these two data sources. I am not trying for a comprehensive account of what might be found there, just a rough and simple overview of the source data. It is not tailored to any particular goal. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of organizations, or both.
+  The real point of the exercise is to pick the lowest hanging fruit from all that might be gathered from these two pools of data. I am not trying for a comprehensive account of what might be found there, just a rough and simple overview. This summary is not tailored to any particular purpose. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of similar organizations, or both.
   
   \vspace{1cm}
   
   **Keywords**: public data, non-profit organizations, Internal Revenue Service, IRS form 990, Propublica Nonprofit Explorer, National Institutes of Health, NIH Exporter, NIH grants, Haskins Laboratories
 
   \pagebreak
-  
+
+draft: true
 always_allow_html: false
   
 bibliography: ["hl-fin.bib"]
@@ -37,18 +38,19 @@ geometry: margin=1in
   
 header-includes:
   - \renewcommand{\abstractname}{Executive Summary}
-  - \usepackage{draftwatermark}
   - \usepackage{booktabs}
-  - \usepackage[labelfont={bf}]{caption} ## make "Figure N:" and "Table N:" bold in captions
-  - \usepackage[all]{nowidow}   ## widow/orphan control
+  - \usepackage[labelfont={bf}]{caption}
   - \usepackage{fancyhdr}
   - \renewcommand{\fancypagestyle}{}
   - \pagestyle{fancy}
   - \fancyhead{}
-  - \fancyhead[L]{\textbf{Data Doodles}}
+  - \fancyhead[L]{\textbf{IRS 990 \& NIH Grant Data}}
   - \fancyhead[R]{\textbf{D. Braze}}
+  - \addtolength{\headheight}{2.0pt}
+  - \addtolength{\topmargin}{-2.0pt}
   - \fancyfoot{}
   - \renewcommand{\footrulewidth}{0.4pt}
+  - \fancyfoot[L]{\textbf{`r format(Sys.time(), '%b %d, %Y')` `r if(FDBpub::is_draft()) "(DRAFT)" else ""`}}
   - \fancyfoot[R]{\textbf{Page \thepage}}
   
 output:
@@ -61,9 +63,14 @@ output:
     pandoc_args:
     - --lua-filter
     - "C:/Users/daveb/R/win-library/4.1/rmarkdown/rmarkdown/lua/pagebreak.lua"
+  rmdformats::readthedown:
+    highlight: tango
+    use_bookdown: true
+    toc_float: true
+    toc_depth: 3
+    number_sections: no
 
 ---
-
 
 ```{r init, echo=FALSE, include=FALSE}
 ## Use the makefile to update this document
@@ -73,7 +80,7 @@ library(here)
 library(readr)
 library(purrr)
 library(dplyr)
-library(tidyr)
+library(tidyr) 
 library(stringr)
 library(lubridate)
 library(forcats)
@@ -84,43 +91,39 @@ library(kableExtra)
 library(ggplot2)
 library(ggrepel)
 library(cowplot)
+library(FDBpub)
 
-opts_chunk$set(fig.width=7,
-               fig.height=7*9/16,
-               out.width="95%",
-               out.height="95%", 
-               dpi=300,
-               dev="cairo_pdf", ## cairo_pdf is superior to the default "pdf" device
-               ## dev="png",       ## use these 2 lines for png graphics
-               ## dev.args=list(type="cairo-png"),
-               eval=TRUE,
-               echo=FALSE,
-               include=FALSE,
-               results='asis',
-               purl=TRUE,
-               cache=FALSE,
-               warning=FALSE,
-               message=FALSE)
+out_type <- doc_type()
 
-options(knitr.kable.NA = "--")
-
-## output_type <- names(rmarkdown::metadata$output)[1]
+knitr::opts_chunk$set(fig.width=7,
+                      fig.height=7*9/16,
+                      fig.align = "center", ## horz center figs on page
+                      out.width="95%",
+                      out.height="95%", 
+                      dpi=if(out_type=="pdf") 300 else 72,
+                      dev=if(out_type=="pdf") "cairo_pdf" else "png", 
+                      dev.args=if(out_type=="pdf") NULL else list(type="cairo-png"),
+                      eval=TRUE,
+                      echo=FALSE,
+                      include=FALSE,
+                      results='asis',
+                      purl=TRUE,
+                      cache=FALSE,
+                      warning=FALSE,
+                      message=FALSE,
+                      knitr.kable.NA = "--"
+                      ## fig.pos="htbp",  ## help control latex figure floating
+                      ## out.extra=""
+                      )
 
 ```
 
 ```{r locals}
 
-out_type <- "other"
-if (knitr::is_html_output()) {
-    out_type <- "html"
-} else if (knitr::is_latex_output()) {
-    out_type <- "pdf"
-}
-
-size <- 12
+size <- 12 # make this conditional on output type 
 
 ## load convenience functions
-source(here("50-locals.R")) 
+## source(here("50-locals.R")) 
 source(here("59-xml2-convenience.R"))
 
 ```
@@ -139,29 +142,29 @@ source(here("02-outputs.R"))
 
 # Preliminaries
 
-This document is an example of what can be gleaned from two distinct main sources of information available from the federal government. The first is IRS form 990, "Return of Organization Exempt from Income Tax." The 990 is an informational form that US-based non-profit organizations must file with the Internal Revenue Service each year [@i990_instructions]. The completed forms are publicly available records as a matter of federal law and policy. A convenient place to get IRS 990s is from the [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/) [@roberts_nonprofit_2013]. It is necessary to search for the particular NPOs you are interested in, and individually download form 990s for each tax year of interest. The form for a specific NPO/tax-year will be available either as a scanned PDF, if it was filed as a paper document, or as an XML file, if it was filed electronically. All NPOs are required to file electronically from 2019 forward. 
+This document is an example of what can be culled from two distinct sources of information available from the federal government. The first is Internal Revenue Service form 990, "Return of Organization Exempt from Income Tax." The 990 is an informational form that US-based non-profit organizations must file with the IRS each year [@i990_instructions]. The completed forms are publicly available records as a matter of federal law and policy. A convenient place to get IRS 990s is from the [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/) [@roberts_nonprofit_2013]. It is necessary to search for the particular NPOs you are interested in, and individually download the forms for each tax year. The form for a specific NPO/tax-year will be available either as a scanned PDF, if it was filed as a paper document, or as an XML file, if it was filed electronically. All NPOs are required to file electronically since 2019.
 
-The second source of information used here is details of individual grants from National Institutes of Health (NIH). The NIH Exporter gives access to information about all individual grants made by the NIH [@nih_exporter]. That information includes the direct and indirect moneys paid to grantees each year for each grant. NIH grant data can be downloaded from the [NIH Exporter web tool](https://exporter.nih.gov/) [@nih_exporter]. The data files are available for each fiscal year since 1985 in either CSV or XML format. 
+The second source of information used here is details of individual grants available from the National Institutes of Health. The NIH Exporter is a tool that gives access to information about all individual grants made by the NIH [@nih_exporter]. That information includes the direct and indirect moneys paid to grantees each year for each grant. NIH grant data can be downloaded using the [NIH Exporter web tool](https://exporter.nih.gov/) [@nih_exporter]. The data files are available for each fiscal year since 1985 in either CSV or XML format.
 
 <!-- In addition to these two primary sources, I also make use of consumer price index (CPI) data from the Bureau of Labor Statistics. Dollar values in some figures  and tables are normalized such that the relative value of money in years _n_+1..._m_ is consistent with the purchasing power a dollar base year _n_ (dollar figures are _not_ adjusted unless declared as such). -->
 
-In showcasing what can be learned from these data sources, I use the Haskins Laboratories as a case study. Why Haskins Labs? First, because there is both IRS data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so is required to file an IRS 990 each year, and has been filing those documents electronically since 2014; all NPOs are required to file electronically starting in 2019. Electronic filing is significant for present purposes because it means that the 990 data is available in XML format, making it easy to access. Form 990s that have been filed as paper documents are only available as scanned PDF files, often not of very good quality. This makes data extraction error prone and tedious (but not impossible!). With regard to grant data, Haskins is a research organization and has received significant NIH research funding each year since at least 1970. So, there is a wealth of information about the grants that NIH has made to Haskins over the years available in the NIH ExPORTER database. 
+In showcasing what can be learned from these data sources, I use Haskins Laboratories as a case study. Why Haskins Labs? First, because there is both IRS data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so is required to file an IRS 990 each year, and has been filing those documents electronically since 2014. Electronic filing is significant because it means that the 990 data is available in XML format, making it easy to access. Form 990s that have been filed as paper documents are only available as scanned PDF files, often not of very good quality. This makes data extraction error prone and tedious (but not impossible!). With regard to grant data, Haskins is a research organization and has received significant NIH research funding each year since at least 1970. So, there is a wealth of information about the grants that NIH has made to Haskins over the years.
 
-There are other NPOs that get significant NIH funding. But, most of them are large and complicated organizations (e.g., Yale University). Haskins, on the other hand, is small enough that it is possible to use these data sources to understand something about its financial history without too much effort. That said, I'm really just scratching the surface of what is available in the lab's 990s and NIH grant history.
+There are certainly other NPOs that get significant NIH funding. But, most of them are large and complicated organizations (e.g., Yale University). Haskins, on the other hand, is small enough that it is possible to use these data sources to understand something about its financial history without too much effort. That said, I'm really just scratching the surface of what is available in its 990s and NIH grant history.
 
-Another reason for using Haskins records in this exercise is more personal. I was a senior scientist on the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. Certainly, there are other accounts of the lab's history which are both more detailed and more human than what can be gleaned from these federal databases [cf. @fowler_language_2021; @fowler_oral_history]. As I write the bulk of this document (September, 2021) the most recent IRS 990 available is for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records might provide an interesting complement to other views of Haskins' history, but constructing an overview of Haskins history is not really my goal. I'm simply using my connection to the labs as one source of motivation for exploring these databases.
+Another reason for using Haskins records in this exercise is more personal. I was a senior scientist on the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. Certainly, there are other accounts of the lab's history which are more detailed and more human than what can be gleaned from these federal databases [cf. @fowler_language_2021; @fowler_oral_history]. As I write the bulk of this document (September, 2021) the most recent IRS 990 available is for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records might provide an interesting complement to other views of Haskins' history, but constructing an overview of Haskins history is not really my goal. I'm simply using my connection to the labs as one source of motivation for exploring these databases.
 
-The real point of this exercise is simply to pick the lowest hanging fruit out of all that might be gleaned from these two federal sources. I am not trying for a comprehensive account of what might be found there. The  summaries (figures and tables) that I provide here are best thought of as rough and simple overviews of the source data. They are not tailored to any particular goal. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of organizations, or both.
+The real point of this exercise is simply to pick the lowest hanging fruit out of all that might be gathered from these two federal sources. I am not trying for a comprehensive account of what might be found there. The summaries (figures and tables) that I provide here are best thought of as rough and simple overviews of the source data. They are not tailored to any particular goal. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of organizations, or both.
 
-# Summary of IRS i990s
+# Summary of IRS 990s
 
-Figure \@ref(fig:revenue-expenses-assets) shows annualized revenue, expenses, and net assets over the six year period where IRS data is available in the easily parsable XML format. Figure  \@ref(fig:revenue-expenses-assets-adj) shows those same values, with the addition of curves reflecting the decline in purchasing power of the dollar over time (dashed lines). 
+Figure \@ref(fig:revenue-expenses-assets) shows annualized revenue, expenses, and net assets over the six year period where IRS data is available in the easily parsable XML format. Figure \@ref(fig:revenue-expenses-assets-adj) shows those same values, with the addition of curves reflecting the decline in purchasing power of the dollar over time (dashed lines).
 
 ```{r revenue-expenses-assets, include=TRUE, fig.cap=rea.cap}
 
 ## revenue, expenses, and assets by year
 
-rea.fig
+watermark(rea.fig, do=is_draft())
 
 ```
 
@@ -169,56 +172,57 @@ rea.fig
 
 ## revenue, expenses, and assets: adjusted for CPI inflation and unadjusted in one figure
 
-reacpi.fig
+watermark(reacpi.fig, do=is_draft())
 
 ```
 
-In Figure \@ref(fig:revenue-expenses-assets-nihfunding), I've added a line to Figure  \@ref(fig:revenue-expenses-assets) representing NIH grant money received by the labs. I've done this even though, as best I can determine, IRS annual data and NIH annual data use slightly different fiscal years. IRS 990 data corresponds to the calendar year; the IRS allows other options, but Haskins uses a calendar year for its filings. The NIH fiscal year runs from October through September and fiscal years are labeled according the year in which they end. Nonetheless, it is a useful comparison. Figure  \@ref(fig:revenue-expenses-assets-nihfunding) also includes NIH data one year forward and and one year back from IRS data, just because. Keep in mind that the amounts represented by _NIH Total Costs_ are already included in the _Revenue_ curve. NIH Total Costs is the sum of direct + indirect funds for all NIH grants where Haskins is the primary grantee; subawards to Haskins, where the primary grant goes to another organization and Haskins is a sub-contractor, are not included in this quantity. It is clear that NIH Total Costs are a significant proportion of total revenue in each year, but the proportion varies considerably, and declines rather dramatically over the most recent 3 years.
+In Figure \@ref(fig:revenue-expenses-assets-nihfunding), I've added a line to Figure \@ref(fig:revenue-expenses-assets) representing NIH grant money received by the labs. I've done this even though, as best I can determine, IRS annual data and NIH annual data use slightly different fiscal years. IRS 990 data corresponds to the calendar year; the IRS allows other options, but Haskins uses a calendar year for its filings. The NIH fiscal year runs from October through September and fiscal years are labeled according the year in which they end. Nonetheless, it is a useful comparison. Figure \@ref(fig:revenue-expenses-assets-nihfunding) also includes NIH data one year forward and and one year back from IRS data, just because. Keep in mind that the amounts represented by *NIH Total Costs* are already included in the *Revenue* curve. NIH Total Costs is the sum of direct + indirect funds for all NIH grants where Haskins is the primary grantee; subawards to Haskins, where the primary grant goes to another organization and Haskins is a sub-contractor, are not included in this quantity. It is clear that NIH Total Costs are a significant proportion of total revenue in each year, but the proportion varies considerably, and declines rather dramatically over the most recent 3 years.
 
 ```{r revenue-expenses-assets-nihfunding, include=TRUE, fig.cap=reanih.cap}
 
 ## revenue, expenses, and assets plus NIH total costs 
 
-reanih.fig
+watermark(reanih.fig, do=is_draft())
 
-``` 
+```
 
 \pagebreak
 
 ## Haskins Revenue
 
-IRS 990s identify revenue as belonging to any one of more than a dozen categories. Most of these are not used by Haskins. Figure \@ref(fig:revenue-breakdown) shows the breakdown of Haskins' revenue by category as reported in the labs' 990s. The maximum at each time-point in Figure \@ref(fig:revenue-breakdown) is equal to the _Revenue_ quantities depicted in green in figures \@ref(fig:revenue-expenses-assets), \@ref(fig:revenue-expenses-assets-adj), and \@ref(fig:revenue-expenses-assets-nihfunding). 
+IRS 990s identify revenue as belonging to any one of more than a dozen categories. Most of these are not used by Haskins. Figure \@ref(fig:revenue-breakdown) shows the breakdown of Haskins' revenue by category as reported in the labs' 990s. The maximum at each time-point in Figure \@ref(fig:revenue-breakdown) is equal to the *Revenue* quantities depicted in green in figures \@ref(fig:revenue-expenses-assets), \@ref(fig:revenue-expenses-assets-adj), and \@ref(fig:revenue-expenses-assets-nihfunding).
 
-I've also subdivided the IRS _government grants_ category from the IRS 990 into two parts: NIH grant money that goes directly to Haskins as primary performance site, derived from NIH ExPORTER data, and 'other' grant money. NIH Total Cost in figure \@ref(fig:revenue-breakdown) is the same quantity shown in blue in Figure \@ref(fig:revenue-expenses-assets-nihfunding). The quantities shown in \@ref(fig:revenue-breakdown) as _Other Gov. Grants_ is the difference between the _Revenue_ and _NIH Total Costs_ curves in Figure \@ref(fig:revenue-expenses-assets-nihfunding). Keep in mind the previously noted asynchrony in fiscal years for NIH vs. IRS sourced data.
+I've also subdivided the IRS *government grants* category from the IRS 990 into two parts: NIH grant money that goes directly to Haskins as primary performance site, derived from NIH ExPORTER data, and 'other' grant money. NIH Total Cost in figure \@ref(fig:revenue-breakdown) is the same quantity shown in blue in Figure \@ref(fig:revenue-expenses-assets-nihfunding). The quantities shown in \@ref(fig:revenue-breakdown) as *Other Gov. Grants* is the difference between the *Revenue* and *NIH Total Costs* curves in Figure \@ref(fig:revenue-expenses-assets-nihfunding). Keep in mind the previously noted asynchrony in fiscal years for NIH vs. IRS sourced data.
 
 ```{r revenue-breakdown, include=TRUE, fig.cap=revenue.cap}
 
-revenue.fig
+watermark(revenue.fig, do=is_draft())
 
-``` 
+```
 
 \pagebreak
 
 ## Haskins Expenses
 
-Figure \@ref(fig:expense-breakdown) shows the partitioning of Haskins Expenses by IRS defined category. Inspection of the figure makes clear that salaries are the single largest expense over the period under consideration. 'Other Expenses' is second largest. Grants from Haskins to others are a smaller but still non-trivial expense in each year. These are divided into two categories: Grants to Organizations, and 'Other Grants'. The first category seems fairly straightforward, but it is not clear to me what would fall into the second. Regardless, more information on Haskins grant-making activities can be found in Schedule I, for grants to US based organizations, and in Schedule F, for international grants [@i990_schedf; @i990_schedi]. Read on. 
+Figure \@ref(fig:expense-breakdown) shows the partitioning of Haskins Expenses by IRS defined category. Inspection of the figure makes clear that salaries are the single largest expense over the period under consideration. 'Other Expenses' is second largest. Grants from Haskins to others are a smaller but still non-trivial expense in each year. These are divided into two categories: Grants to Organizations, and 'Other Grants'. The first category seems fairly straightforward, but it is not clear to me what would fall into the second. Regardless, more information on Haskins grant-making activities can be found in Schedule I, for grants to US based organizations, and in Schedule F, for international grants [@i990_schedf; @i990_schedi]. Read on.
 
 ```{r expense-breakdown, include=TRUE, fig.cap=expense.cap}
 
-expense.fig
+watermark(expense.fig, do=is_draft())
 
-``` 
+```
 
 ### Grantees
+
 #### US Grantees
 
-Information about Haskins grants (AKA subawards) to US-based organizations can be found in Schedule I [@i990_schedi]. Figure \@ref(fig:us-grantees) shows the yearly total of grants made by Haskins to US-based organizations each year, further broken down by recipient organization. Three of 10 grant recipients received money in all six years from 2014 through 2019 (CUNY, UCSF, Yale). Three received money in three of six years (NYU, UConn, USC). The remaining four organizations each got money from Haskins in just one of the six years. 
+Information about Haskins grants (AKA subawards) to US-based organizations can be found in Schedule I [@i990_schedi]. Figure \@ref(fig:us-grantees) shows the yearly total of grants made by Haskins to US-based organizations each year, further broken down by recipient organization. Three of 10 grant recipients received money in all six years from 2014 through 2019 (CUNY, UCSF, Yale). Three received money in three of six years (NYU, UConn, USC). The remaining four organizations each got money from Haskins in just one of the six years.
 
 ```{r us-grantees, include=TRUE, fig.cap=us.grantee.cap}
 
 us.grantee.cap <- "Yearly total of grants made by Haskins to US-based organizations, by recipient. Organization key: YALE = Yale University; UCSF = University of California at San Francisco; CUNY = Research Foundation of CUNY; NYU = New York University; USC = University of Southern California; UCONN = University of Connecticut; ELF = Endangered Language Fund; DUPONT HOSP = Dupont Hospital for Children; COLUMBIA U = Teachers College at Columbia University; U OF IOWA = University of Iowa."
 
-us.grantees.fig
+watermark(us.grantees.fig, do=is_draft())
 
 ```
 
@@ -230,7 +234,7 @@ Schedule F provides some information about grants going outside the United State
 
 intl.grants.cap <- "Yearly total of grants made by Haskins outside the USA, by region."
 
-intl.grants.fig
+watermark(intl.grants.fig, do=is_draft())
 
 ```
 
@@ -238,19 +242,19 @@ intl.grants.fig
 
 ## Directors, Officers, & Key Employees
 
-Tables in this section are based on information from i990 Part VII, which identifies several categories of individuals having particularly significant roles within each NPO. These categories include: members of the board of directors, officers of the corporation, key employees, and highly compensated employees. 
+Tables in this section are based on information from i990 Part VII, which identifies several categories of individuals having particularly significant roles within each NPO. These categories include: members of the board of directors, officers of the corporation, key employees, and highly compensated employees.
 
 One of the challenges in dealing with named individuals in form 990s, of whatever category, is that when the same individual is mentioned across multiple years, their name is not always rendered consistently. One common issue is to do with middle names. Sometimes these are included in full, sometimes as initial only, sometimes they will be omitted altogether. Other variations do crop up as well. A similar problem exists for titles/roles. In the case either of names or of roles, if you want to make use of these as *data*, then there is a certain amount of work that must be done up-front to ensure that they are properly normalized.
 
 ### Directors
 
-Table \@ref(tab:directors) shows board members (Directors) over time and their roles on the board as listed on each year's IRS form 990. Note that, as is usual in non-profit organizations, the President/CEO of the organization is an _ex officio_ member of the Board of Directors. So, Dr. Pugh is listed on both Table \@ref(tab:directors) and Table \@ref(tab:corporate-officers). P. Rubin and A. Abramson also appear in both tables. They each served terms as corporate officers and as members of the board, but their terms as directors and as officers did not overlap.
+Table \@ref(tab:directors) shows board members (Directors) over time and their roles on the board as listed on each year's IRS form 990. Note that, as is usual in non-profit organizations, the President/CEO of the organization is an *ex officio* member of the Board of Directors. So, Dr. Pugh is listed on both Table \@ref(tab:directors) and Table \@ref(tab:corporate-officers). P. Rubin and A. Abramson also appear in both tables. They each served terms as corporate officers and as members of the board, but their terms as directors and as officers did not overlap.
 
 ```{r directors, include=TRUE}
 
 director.tbl.cap <- "Board members over time and their roles on the board as listed on each year's form 990. CHAIR = chairperson; DIR = director; PCH = past chairperson; SEC = secretary of the board; TRE = treasurer."
 
-format_table(caption = director.tbl.cap, director.tbl)
+format_table(caption = director.tbl.cap, director.tbl, out_type=out_type)
 
 ```
 
@@ -258,7 +262,7 @@ format_table(caption = director.tbl.cap, director.tbl)
 
 Table \@ref(tab:corporate-officers) shows Haskins Laboratories' corporate officers over time, and their roles, as listed on each year's IRS form 990. Note that Arthur Abramson passed away in December of 2017 [@abramson_obit], although he is still listed as an officer (Coporate Secretary) in subsequent years.
 
-Office of the Connecticut Secretary of the State (HL is registered in CT) makes business filings publicly available on its website (e.g., https://service.ct.gov/business/s/onlinebusinesssearch?businessName=haskins%20laboratories). So with a little work, it will be possible to link and compare information from IRS 990s with information, including details about officers, from a business's filings with the SotS. Unfortunately, not all states are similarly transparent in making corporate filings so easily accessible.
+Office of the Connecticut Secretary of the State (HL is registered in CT) makes business filings publicly available on its website (e.g., <https://service.ct.gov/business/s/onlinebusinesssearch?businessName=haskins%20laboratories>). So with a little work, it will be possible to link and compare information from IRS 990s with information, including details about officers, from a business's filings with the SotS. Unfortunately, not all states are similarly transparent in making corporate filings so easily accessible.
 
 Another possible source of linking information, one that may be more peculiar to Haskins Labs than it is of general utility, is the [Open Payrolls](https://openpayrolls.com/) website [@openpayrolls_2021]. Open Payrolls aggregates payroll information for public employees at the local, state, and federal level. At least some of Haskins corporate officers serve in their roll at the labs as a side hustle, whereas their day jobs are as faculty members at public colleges or universities. So if an officer's Haskins salary, as reported on its IRS 990s, seems low, there may be more to see at Open Payrolls.
 
@@ -266,23 +270,23 @@ Another possible source of linking information, one that may be more peculiar to
 
 officers.tbl.cap <- "Corporate officers (not officers of the board) over time. CEO = Chief Executive Officer; PRES = President; SEC = Corporate Secretary; VP = Vice President; VPF = VP of Finance \\& Administration; VPR = VP of Research; VPSO = VP of Scientific Operations. Note that Arthur Abramson passed away in December of 2017."
 
-format_table(caption = officers.tbl.cap, officers.tbl)
+format_table(caption = officers.tbl.cap, officers.tbl, out_type=out_type)
 
 ```
 
 ### Highly Compensated Employees
 
-In IRS terms, _highly compensated employees_ (HCE) are those who are not officers of the corporation, but who received reportable compensation (i.e. regular salary, not including deferred or non-salary compensation) of at least $100,000 in a given year. Note that several officers of the corporation also received salaries of more than $100,000. Table \@ref(tab:highly-compensated) lists non-officer HCEs. 
+In IRS terms, *highly compensated employees* (HCE) are those who are not officers of the corporation, but who received reportable compensation (i.e. regular salary, not including deferred or non-salary compensation) of at least \$100,000 in a given year. Note that several officers of the corporation also received salaries of more than \$100,000. Table \@ref(tab:highly-compensated) lists non-officer HCEs.
 
 ```{r highly-compensated, include=TRUE}
 
 hce.tbl.cap <- "Highly compensated employees over time. A '1' indicates the person was listed as an HCE on that year's i990. Zeros (0) should not be interpreted as an indicator of employment status."
 
-format_table(caption = hce.tbl.cap, hce.tbl)
+format_table(caption = hce.tbl.cap, hce.tbl, out_type=out_type)
 
 ```
 
-TODO: Plot total salary reported for officers and HCEs by year as percentages of total salary paid by HL each year (cf. Figure \@ref(fig:expense-breakdown)). 
+TODO: Plot total salary reported for officers and HCEs by year as percentages of total salary paid by HL each year (cf. Figure \@ref(fig:expense-breakdown)).
 
 \pagebreak
 
@@ -290,10 +294,9 @@ TODO: Plot total salary reported for officers and HCEs by year as percentages of
 
 This data set includes a total of `r length(unique(D0_nih$grant))` National Institutes of Health grants awarded to Haskins Laboratories due to the efforts of `r length(unique(D0_nih$pi_ids))` PIs in the period spanning fiscal years `r min(D0_nih$fy)` to `r max(D0_nih$fy)`. Note that NIH actually provides weekly data releases during the active fiscal year (i.e., ), but I have not included those "up to the minute" data here, mostly because it would be a little tedious to go that extra step and aggregate the weekly reports into a single partial data set for the current year [@nih_exporter].
 
-
 ## Lifespans and Types of Grants
 
-Figure \@ref(fig:grant-activity) shows the lifespans of grants to Haskins within the analyzed period, while also highlighting the type of grant in each case. For each grant, activity codes run from the first active fiscal year to the last, with a point (letter) at each intermediate active year. Grants are sorted by last year of activity so that grants with more recent funding are closer to the bottom. 
+Figure \@ref(fig:grant-activity) shows the lifespans of grants to Haskins within the analyzed period, while also highlighting the type of grant in each case. For each grant, activity codes run from the first active fiscal year to the last, with a point (letter) at each intermediate active year. Grants are sorted by last year of activity so that grants with more recent funding are closer to the bottom.
 
 There are some oddities here. Notice that for some grants(e.g., DC000183) there seem to be intermediate years without activity. I speculate that these are periods of unfunded extension. Also, for most grants the 'activity' code does not change, but for a few it does (e.g., DC000183, DC000121). I don't know what to make of that.
 
@@ -301,9 +304,9 @@ There are some oddities here. Notice that for some grants(e.g., DC000183) there 
 
 grant.activity.cap <- "Lifespans of Grants. Grants are sorted by final year of activity within depicted span. I surmise that lacunae within a grant's span (missing activity codes) are likely due to 'no cost extensions.'"
 
-grant.activity
+watermark(grant.activity, do=is_draft())
 
-``` 
+```
 
 \pagebreak
 
@@ -311,9 +314,9 @@ grant.activity
 
 ### Years of Grant Activity per PI
 
-Figure \@ref(fig:pi-activity) shows the years in which each primary investigator has grant income. The figure shows grant activity at Haskins Laboratories only. Any grant activity at other organizations is not included here. Two instances of Co-PIs are indicated as composite individuals. Note years in which a PI has grant income only through unfunded extensions are not included included here. Grants are sorted by last year of activity so that grants with more recent funding are closer to the bottom. 
+Figure \@ref(fig:pi-activity) shows the years in which each primary investigator has grant income. The figure shows grant activity at Haskins Laboratories only. Any grant activity at other organizations is not included here. Two instances of Co-PIs are indicated as composite individuals. Note years in which a PI has grant income only through unfunded extensions are not included included here. Grants are sorted by last year of activity so that grants with more recent funding are closer to the bottom.
 
-As with IRS form 990 data, PI names are sometimes not consistently rendered in the NIH grants database. That is, when the same individual is mentioned across multiple grants/years, their name is not always rendered consistently. Middle names are a common source of problems. Sometimes these are included in full, sometimes as initial only, sometimes they will be omitted altogether. Married names are another common source of discrepancies. Unlike the IRS, the NIH has included a unique numerical ID for PIs, `pi_ids`, which *should* be consistent across name variations. If the goal is to combine data using names of individuals across IRS and NIH sourced data, there is even more work to be done. For example, names from IRS 990s are typically in first_name last_name order, but the NIH database lists PI names as last_name, first_name. 
+As with IRS form 990 data, PI names are sometimes not consistently rendered in the NIH grants database. That is, when the same individual is mentioned across multiple grants/years, their name is not always rendered consistently. Middle names are a common source of problems. Sometimes these are included in full, sometimes as initial only, sometimes they will be omitted altogether. Married names are another common source of discrepancies. Unlike the IRS, the NIH has included a unique numerical ID for PIs, `pi_ids`, which *should* be consistent across name variations. If the goal is to combine data using names of individuals across IRS and NIH sourced data, there is even more work to be done. For example, names from IRS 990s are typically in first_name last_name order, but the NIH database lists PI names as last_name, first_name.
 
 TODO: Another useful view would be to sort grants by **first** year of activity. This would highlight the number of grant starts in each fiscal year.
 
@@ -321,14 +324,13 @@ TODO: Another useful view would be to sort grants by **first** year of activity.
 
 pi.activity.cap <- "Years in which each primary investigator generated revenue to Haskins through one or more NIH grants are indicated with solid points. PIs are sorted by final year of activity within depicted time span. This chart indicates only NIH grant activity at Haskins; possible funding from sources is not included, nor is a PI's grant activity at other organizations. Co-PIs are shown as composite individuals. Note that a year in which a PI has grant income only through unfunded extensions will be blank (no point)."
 
-pi.activity
+watermark(pi.activity, do=is_draft())
 
-``` 
+```
 
-### Total Number of Grants & Grant Income per PI 
+### Total Number of Grants & Grant Income per PI
 
 TODO: insert table of grant count and grant income by PI and year
-
 
 \pagebreak
 
@@ -340,7 +342,7 @@ Figure \@ref(fig:nih-total-costs) shows NIH Total Costs per year since 2000 to H
 
 totalcosts.cap <- "NIH Total Costs per year to Haskins in blue. Note that the NIH database only includes total cost numbers for grant activity from FY 2000 forward. NIH Direct Costs per year are in grey, which are only provided as disaggregated from total costs beginning in 2012."
 
-totalcosts.fig
+watermark(totalcosts.fig, do=is_draft())
 
 ```
 
@@ -354,7 +356,7 @@ TODO: Show effective F&A rate as a percentation of Total Costs. Although, grante
 
 # Appendix A: Analysis Software {#r-packages}
 
-All data summaries and analyses in this report were carried out using the _R_ statistical environment, version `r paste(version$major, version$minor, sep=".")` [@cite_R]. The report itself was produced using an Rmarkdown workflow. The following table lists the non-base R packages used in building the report. To see a full citation for a specific package, assuming you have both _R_ and the particular package installed, call (e.g.) _citation(dplyr)_ from the _R_ prompt. 
+All data summaries and analyses in this report were carried out using the *R* statistical environment, version `r paste(version$major, version$minor, sep=".")` [@cite_R]. The report itself was produced using an Rmarkdown workflow. The following table lists the non-base R packages used in building the report. To see a full citation for a specific package, assuming you have both *R* and the particular package installed, call (e.g.) *citation(dplyr)* from the *R* prompt.
 
 ```{r r-package-tab, include=TRUE}
 
@@ -377,15 +379,14 @@ package_tab %>%
 
 # Appendix B: About the Author {#about}
 
-David Braze, Ph.D., is a researcher and consultant with a background in linguistics and reading research. He has more than 25 years experience investigating the cognitive and social foundations of language, literacy, and educational achievement, including 17 years as a Senior Research Scientist at Haskins Laboratories. His research at Haskins, funded by the National Institutes of Health, emphasized the neurobiology of language and reading, and applications to education. Dr. Braze has broad experience consulting in the business, government, and non-profit sectors. 
+David Braze, Ph.D., is a researcher and consultant with a background in linguistics and reading research. He has more than 25 years experience investigating the cognitive and social foundations of language, literacy, and educational achievement, including 17 years as a Senior Research Scientist at Haskins Laboratories. His research at Haskins, funded by the National Institutes of Health, emphasized the neurobiology of language and reading, and applications to education. Dr. Braze has broad experience consulting in the business, government, and non-profit sectors.
 
-|   email: davebraze@gmail.com
+|   email: [davebraze\@gmail.com](mailto:davebraze@gmail.com){.email}
 |   website: [davebraze.org](https://davebraze.org/ "D. Braze's website")
-|   [Google Scholar Page](https://scholar.google.com/citations?hl=en&user=Ri7ovUUAAAAJ&view_op=list_works&sortby=pubdate "Google Scholar Page")
 
 \pagebreak
 
-# References {-}
+# References {.unnumbered}
 
 ::: {.refs}
 :::

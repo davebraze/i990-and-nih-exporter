@@ -2,7 +2,7 @@ R.OPTS := --vanilla
 fname := 80-haskins-financials
 rmd := .Rmd
 source := $(fname)$(rmd)
-outname := haskins-financials
+outname := irs990-NIHgrant-case
 date := $(shell date "+%Y%m%d")
 
 .phoney: help html pdf slides nocache nopartials noreports clean
@@ -30,7 +30,7 @@ help:
 
 html:
 # render html document
-	R $(R_OPTS) -e "rmarkdown::render('"$(source)"', output_format='bookdown::html_document2', output_file='$(outname).html')"
+	R $(R_OPTS) -e "rmarkdown::render('"$(source)"', output_format='rmdformats::readthedown', output_file='$(outname).html')"
 
 pdf:
 # render pdf document
@@ -41,6 +41,22 @@ slides:
 	R $(R_OPTS) -e "knitr::purl('$(source)')" ## pull source from Rmd file
 	R $(R_OPTS) -e "rmarkdown::render('"03-slides.Rmd"')"
 	rm -f "02-cohort1-dibels-pssa.R"
+
+
+### deploy to web
+
+html2web: 
+# make html page suitable for web deployment & put it in '/docs/' folder
+	sed '/CT Achievement Gap: NAEP 4th Grade Reading Scores/ r gtag.js' < $(outname).html > tmp0.html ## insert google analytics tag below page title
+	sed '/CT Achievement Gap: NAEP 4th Grade Reading Scores/ r html-meta.txt' < tmp0.html > index.html ## insert meta tags below page title
+	mv --backup index.html ./docs/.
+	rm -f tmp0.html
+
+publish: html html2web
+# stage and commit webpage changes, then push changes to github
+	git add --verbose 'docs/*'
+	git commit --verbose -m "update webpage"
+	git push --verbose --all
 
 ### cleaning up
 

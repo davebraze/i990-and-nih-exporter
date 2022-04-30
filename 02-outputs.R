@@ -188,6 +188,7 @@ revenue.fig <-
          y = "Dollars (millions)",
          x = "Tax Year") +
     theme_fdbplot() +
+    theme(legend.key=element_blank()) +
     background_grid(major = c("y"),
                     minor = c("y"),
                     size.major = size*.075)
