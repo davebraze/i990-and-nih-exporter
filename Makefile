@@ -45,14 +45,15 @@ slides:
 
 ### deploy to web
 
-html2web: 
+ready4web: html pdf
 # make html page suitable for web deployment & put it in '/docs/' folder
 	sed '/CT Achievement Gap: NAEP 4th Grade Reading Scores/ r gtag.js' < $(outname).html > tmp0.html ## insert google analytics tag below page title
 	sed '/CT Achievement Gap: NAEP 4th Grade Reading Scores/ r html-meta.txt' < tmp0.html > index.html ## insert meta tags below page title
 	mv --backup index.html ./docs/.
 	rm -f tmp0.html
+	cp --backup $(outname).pdf ./docs/.
 
-publish: html html2web
+publish: ready4web
 # stage and commit webpage changes, then push changes to github
 	git add --verbose 'docs/*'
 	git commit --verbose -m "update webpage"

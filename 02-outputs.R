@@ -24,8 +24,7 @@ rea.fig <-
     scale_y_continuous(limits = c(0,NA),
                        labels = ~.x/10^6) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1]), floor(.x[2]))) +
-    labs(title = "Haskins Laboratories",
-         subtitle = "Expenses, Revenue, & Net Assets",
+    labs(title = "Revenue, Expenses, & Net Assets",
          y = "Dollars (millions)",
          x = "Tax Year") +
     geom_text_repel(data = labels.rea,
@@ -75,8 +74,7 @@ reacpi.fig <-
     scale_y_continuous(limits = c(0,NA),
                        labels = ~.x/10^6) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1]), floor(.x[2]))) +
-    labs(title = "Haskins Laboratories",
-         subtitle = "Expenses, Revenue, & Net Assets with and without adjustment for inflation",
+    labs(title = "Revenue, Expenses, & Net Assets (inflation adjusted)",
          y = "Dollars (millions)",
          x = "Tax Year") +
     geom_text_repel(data = labels.reacpi,
@@ -127,8 +125,7 @@ reanih.fig <-
     scale_y_continuous(limits = c(0,NA),
                        labels = ~.x/10^6) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1]), floor(.x[2]))) +
-    labs(title = "Haskins Laboratories",
-         subtitle = "Expenses, Revenue, Net Assets, & NIH Total Costs",
+    labs(title = "Revenue, Expenses, Net Assets, \\& Total Costs",
          y = "Dollars (millions)",
          x = "Tax Year") +
     geom_text_repel(data = label990,
@@ -183,8 +180,7 @@ revenue.fig <-
                        labels = ~.x/10^6) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1]), floor(.x[2]))) +
     scale_fill_viridis_d(option="H") +
-    labs(title = "Haskins Laboratories",
-         subtitle = "Revenue Categories by Year",
+    labs(title = "Revenue Categories by year",
          y = "Dollars (millions)",
          x = "Tax Year") +
     theme_fdbplot() +
@@ -223,8 +219,7 @@ expense.fig <-
                        labels = ~.x/10^6) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1]), floor(.x[2]))) +
     scale_fill_viridis_d(option="H") +
-    labs(title = "Haskins Laboratories",
-         subtitle = "Expense Categories by Year",
+    labs(title = "Expense Categories by Year",
          y = "Dollars (millions)",
          x = "Tax Year") +
     theme_fdbplot() +
@@ -266,8 +261,7 @@ us.grantees.fig <-
     background_grid(major = c("y"),
                     minor = c("y"),
                     size.major = size*.075) +
-    labs(title = "Haskins Laboratories",
-         subtitle = "US Based Grantees by Year",
+    labs(title = "US Based Grantees by Year",
          y = "Dollars (millions)",
          x = "Tax Year",
          fill = "Grant Recipient")
@@ -290,8 +284,7 @@ intl.grants.fig <-
                        labels = ~.x/10^6) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1]), floor(.x[2]))) +
     scale_fill_viridis_d(option="H") +
-    labs(title = "Haskins Laboratories",
-         subtitle = "International Grants by Year and Region",
+    labs(title = "International Grants by Year and Region",
          y = "Dollars (millions)",
          x = "Tax Year",
          fill = "Grant Region") +
@@ -389,8 +382,7 @@ grant.activity <-
     scale_shape_manual(values=LETTERS) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1])+1, floor(.x[2]), by=5)) +
     scale_color_viridis_d(option="H") +
-    labs(title = "Haskins Laboratories",
-         subtitle = "Grant Duration and Activity Code",
+    labs(title = "Grant Duration and Activity Code",
          y = "Grant ID",
          x = "NIH Fiscal Year") +
     theme_fdbplot() +
@@ -408,8 +400,7 @@ pi.activity <-
     geom_point(stat="identity", size=2.5, alpha=2/3) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1])+1, floor(.x[2]), by=5)) +
     scale_color_viridis_d(option="H") +
-    labs(title = "Haskins Laboratories",
-         subtitle = "Primary Investigator Activity",
+    labs(title = "Primary Investigator Activity",
          y = "Primary Investigator",
          x = "NIH Fiscal Year") +
     theme_fdbplot() +
@@ -447,8 +438,7 @@ totalcosts.fig <-
     scale_y_continuous(limits = c(0,NA),
                        labels = ~.x/10^6) +
     scale_x_continuous(breaks = ~seq(ceiling(.x[1])+1, floor(.x[2])-1, by=5)) +
-    labs(title = "Haskins Laboratories",
-         subtitle = "NIH Total Costs since 2000 & Direct Costs since 2012",
+    labs(title = "NIH Total Costs since 2000 & Direct Costs since 2012",
          y = "Dollars (millions)",
          x = "NIH Fiscal Year") +
     geom_text_repel(data=labeltc,

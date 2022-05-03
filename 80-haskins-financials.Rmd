@@ -1,5 +1,6 @@
+
 ---
-title: Doodling with IRS 990 \& NIH Grant Data
+title: NPOs through the lens of IRS 990 \& NIH Grant Data
 subtitle: |
   A Case Study
   
@@ -11,11 +12,9 @@ date: |
 
 abstract: |
 
-  This document is an example of what can be culled from two distinct sources of information available from the federal government. The first is the IRS form 990, "Return of Organization Exempt from Income Tax." The second is details of individual grants from National Institutes of Health. 
+  This document is an example of information about non-profit organizations that can be found in two distinct federal data sources. The first is the Internal Revenue Service form 990, "Return of Organization Exempt from Income Tax." The second is details of individual grants from National Institutes of Health. Haskins Laboratories serves as a case study. Why Haskins? Because both IRS 990 data and NIH grant data available for the Labs. Haskins is a 501(c)(3) non-profit organization, so must file a return with the IRS each year. It is also a research organization that has been continuously funded by the NIH since at least 1970.
 
-  Haskins Laboratories serves as a case study. Why Haskins? Because there is both IRS 990 data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so must file an IRS 990 each year. It is also a research organization that has received significant NIH funding each year since at least 1970.
-
-  Some other NPOs do get significant NIH funding. But, most of them are large, complicated, organizations (e.g., Yale University). Haskins, on the other hand, is small enough that one can use information about it contained in these public data sources to understand something about its financial history, without too much effort.
+  All NPOs must file with the IRS, but very few get direct NIH funding. Of the few that do, most are large, complicated, organizations (e.g., Yale University). On the other hand, Haskins is small enough that one can use information about it contained in these public data sources to understand something about its financial history (e.g., revenue, expenses, assets, number of employees, senior management, board members, etc), without too much effort.
   
   I also have a personal reason for focusing on Haskins. A big part of my professional career was spent at there. I was employed as a member Haskins' research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public databases. My connection to the labs is a source of inspiration for exploring these federal databases.
 
@@ -23,7 +22,7 @@ abstract: |
   
   \vspace{1cm}
   
-  **Keywords**: public data, non-profit organizations, Internal Revenue Service, IRS form 990, Propublica Nonprofit Explorer, National Institutes of Health, NIH Exporter, NIH grants, Haskins Laboratories
+  **Keywords**: public data, non-profit organizations, Internal Revenue Service, IRS form 990, Propublica Nonprofit Explorer, National Institutes of Health, NIH Exporter, NIH grants
 
   \pagebreak
 
@@ -138,23 +137,34 @@ source(here("02-outputs.R"))
 
 ```
 
+```{r html-exec-summ, eval=doc_type()=="html", include=TRUE}
+
+cat("\\pagebreak\n# Executive Summary\n")
+
+cat(rmarkdown::metadata$abstract)
+
+```
+
 \pagebreak
+# Introduction
 
-# Preliminaries
-
-This document is an example of what can be culled from two distinct sources of information available from the federal government. The first is Internal Revenue Service form 990, "Return of Organization Exempt from Income Tax." The 990 is an informational form that US-based non-profit organizations must file with the IRS each year [@i990_instructions]. The completed forms are publicly available records as a matter of federal law and policy. A convenient place to get IRS 990s is from the [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/) [@roberts_nonprofit_2013]. It is necessary to search for the particular NPOs you are interested in, and individually download the forms for each tax year. The form for a specific NPO/tax-year will be available either as a scanned PDF, if it was filed as a paper document, or as an XML file, if it was filed electronically. All NPOs are required to file electronically since 2019.
+This document is an example of what can be learned about non-profit organizations from two distinct US government data sources. The first is Internal Revenue Service form 990, "Return of Organization Exempt from Income Tax." The 990 is an informational form that US-based NPOs must file with the IRS each year [@i990_instructions]. The completed forms are publicly available records as a matter of federal law and policy. A convenient place to get IRS 990s is from the [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/) [@roberts_nonprofit_2013]. It is necessary to search for the particular NPOs you are interested in, and individually download the forms for each tax year. The form for a specific NPO/tax-year will be available either as a scanned PDF, if it was filed as a paper document, or as an XML file, if it was filed electronically. All NPOs are required to file electronically since 2019.
 
 The second source of information used here is details of individual grants available from the National Institutes of Health. The NIH Exporter is a tool that gives access to information about all individual grants made by the NIH [@nih_exporter]. That information includes the direct and indirect moneys paid to grantees each year for each grant. NIH grant data can be downloaded using the [NIH Exporter web tool](https://exporter.nih.gov/) [@nih_exporter]. The data files are available for each fiscal year since 1985 in either CSV or XML format.
 
 <!-- In addition to these two primary sources, I also make use of consumer price index (CPI) data from the Bureau of Labor Statistics. Dollar values in some figures  and tables are normalized such that the relative value of money in years _n_+1..._m_ is consistent with the purchasing power a dollar base year _n_ (dollar figures are _not_ adjusted unless declared as such). -->
 
-In showcasing what can be learned from these data sources, I use Haskins Laboratories as a case study. Why Haskins Labs? First, because there is both IRS data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so is required to file an IRS 990 each year, and has been filing those documents electronically since 2014. Electronic filing is significant because it means that the 990 data is available in XML format, making it easy to access. Form 990s that have been filed as paper documents are only available as scanned PDF files, often not of very good quality. This makes data extraction error prone and tedious (but not impossible!). With regard to grant data, Haskins is a research organization and has received significant NIH research funding each year since at least 1970. So, there is a wealth of information about the grants that NIH has made to Haskins over the years.
+In showcasing what can be learned from these data sources, I use Haskins Laboratories as a case study. Why Haskins Labs? First, because there is both IRS data and NIH grant data available for the Labs. It is a 501(c)(3) non-profit organization, so must file a form 990 with the IRS each year, and it has been filing those documents electronically since 2014. Electronic filing is significant because it means that the data is available in XML format, making it easy to access programmatically. Form 990s that have been filed as paper documents are only available as scanned PDF files, sometimes not of very good quality. This makes automated data extraction error prone and tedious (but not impossible!). With regard to grant data, Haskins is a research organization and has received NIH grant money each year since at least 1970. 
 
-There are certainly other NPOs that get significant NIH funding. But, most of them are large and complicated organizations (e.g., Yale University). Haskins, on the other hand, is small enough that it is possible to use these data sources to understand something about its financial history without too much effort. That said, I'm really just scratching the surface of what is available in its 990s and NIH grant history.
+There are certainly other NPOs that get significant NIH funding. But, most of them are large and complicated organizations (e.g., Yale University). Haskins, on the other hand, is small enough that it is possible to use these data sources to understand something about its financial history without too much effort. That said, I'm really just scratching the surface of what is available in its 990s and NIH grant history. 
 
-Another reason for using Haskins records in this exercise is more personal. I was a senior scientist on the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. Certainly, there are other accounts of the lab's history which are more detailed and more human than what can be gleaned from these federal databases [cf. @fowler_language_2021; @fowler_oral_history]. As I write the bulk of this document (September, 2021) the most recent IRS 990 available is for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records might provide an interesting complement to other views of Haskins' history, but constructing an overview of Haskins history is not really my goal. I'm simply using my connection to the labs as one source of motivation for exploring these databases.
+Another reason for using Haskins records in this exercise is more personal. I was a senior scientist on the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. Certainly, there are other accounts of the lab's history which are more detailed and more human than what can be gleaned from these federal databases [cf. @fowler_language_2021; @fowler_oral_history]. I'm simply using my connection to the labs as one source of motivation for exploring these databases.
 
-The real point of this exercise is simply to pick the lowest hanging fruit out of all that might be gathered from these two federal sources. I am not trying for a comprehensive account of what might be found there. The summaries (figures and tables) that I provide here are best thought of as rough and simple overviews of the source data. They are not tailored to any particular goal. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of organizations, or both.
+The initial work on this project was done in late summer of 2021.  At that time the most recent IRS 990 available was for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records might provide an interesting complement to other views of Haskins' history, but constructing an overview of Haskins history is not really my goal. 
+
+The real point of the exercise is simply to pick the lowest hanging fruit out of all that might be gathered from these two federal sources. I am not trying for a comprehensive account of what might be found there. The summary that I provide here is best thought of as a rough and simple overview of the source data. It is not tailored to any particular goal. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of organizations, or both.
+
+This document is, and is likely to remain, a work-in-progress. I returned to it briefly in spring of 2022 to do some minor cleanup and prepare a public release of the project and blog post introducting it. I hope to return to it again later in 2022, once the IRS releases form 990s for 2020 (public release tends to lag submission to the IRS by about 18 months). Regardless, the most current version of the report will 'always' be available as a web page at [https://davebraze.github.io/i990-and-nih-exporter/](https://davebraze.github.io/i990-and-nih-exporter/) and as a pdf file at [https://davebraze.github.io/i990-and-nih-exporter/irs990-NIHgrant-case.pdf](https://davebraze.github.io/i990-and-nih-exporter/irs990-NIHgrant-case.pdf). The github repository containing the ***R*** code used to create the report is at  [https://github.com/davebraze/i990-and-nih-exporter](https://github.com/davebraze/i990-and-nih-exporter).
 
 # Summary of IRS 990s
 
@@ -188,7 +198,7 @@ watermark(reanih.fig, do=is_draft())
 
 \pagebreak
 
-## Haskins Revenue
+## Revenue
 
 IRS 990s identify revenue as belonging to any one of more than a dozen categories. Most of these are not used by Haskins. Figure \@ref(fig:revenue-breakdown) shows the breakdown of Haskins' revenue by category as reported in the labs' 990s. The maximum at each time-point in Figure \@ref(fig:revenue-breakdown) is equal to the *Revenue* quantities depicted in green in figures \@ref(fig:revenue-expenses-assets), \@ref(fig:revenue-expenses-assets-adj), and \@ref(fig:revenue-expenses-assets-nihfunding).
 
@@ -202,7 +212,7 @@ watermark(revenue.fig, do=is_draft())
 
 \pagebreak
 
-## Haskins Expenses
+## Expenses
 
 Figure \@ref(fig:expense-breakdown) shows the partitioning of Haskins Expenses by IRS defined category. Inspection of the figure makes clear that salaries are the single largest expense over the period under consideration. 'Other Expenses' is second largest. Grants from Haskins to others are a smaller but still non-trivial expense in each year. These are divided into two categories: Grants to Organizations, and 'Other Grants'. The first category seems fairly straightforward, but it is not clear to me what would fall into the second. Regardless, more information on Haskins grant-making activities can be found in Schedule I, for grants to US based organizations, and in Schedule F, for international grants [@i990_schedf; @i990_schedi]. Read on.
 
