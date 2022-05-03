@@ -110,10 +110,11 @@ knitr::opts_chunk$set(fig.width=7,
                       cache=FALSE,
                       warning=FALSE,
                       message=FALSE,
-                      knitr.kable.NA = "--"
                       ## fig.pos="htbp",  ## help control latex figure floating
                       ## out.extra=""
                       )
+
+options(knitr.kable.NA = "--")
 
 ```
 
@@ -160,7 +161,7 @@ There are certainly other NPOs that get significant NIH funding. But, most of th
 
 Another reason for using Haskins records in this exercise is more personal. I was a senior scientist on the Haskins research staff from 2002 until 2019. So, I have some curiosity about what nuggets of historical interest can be found in these public data sources. Certainly, there are other accounts of the lab's history which are more detailed and more human than what can be gleaned from these federal databases [cf. @fowler_language_2021; @fowler_oral_history]. I'm simply using my connection to the labs as one source of motivation for exploring these databases.
 
-The initial work on this project was done in late summer of 2021.  At that time the most recent IRS 990 available was for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records might provide an interesting complement to other views of Haskins' history, but constructing an overview of Haskins history is not really my goal. 
+The initial work on this project was done in late summer of 2021.  At that time, the most recent IRS 990 available was for the 2019 tax year. NIH data is both more up to date and goes back further in time. Together, the IRS and NIH records might provide an interesting complement to other views of Haskins' history, but constructing an overview of Haskins history is not really my goal. 
 
 The real point of the exercise is simply to pick the lowest hanging fruit out of all that might be gathered from these two federal sources. I am not trying for a comprehensive account of what might be found there. The summary that I provide here is best thought of as a rough and simple overview of the source data. It is not tailored to any particular goal. One can easily imagine projects based on either of these data sources that involve in-depth examinations of how individual organizations change over time, or comparisons of groups of organizations, or both.
 
