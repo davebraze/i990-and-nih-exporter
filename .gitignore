@@ -1,5 +1,7 @@
 ## ignore these patterns in the root, but not subdirs
 nul
+irs990-NIHgrant-case.html
+irs990-NIHgrant-case.pdf
 
 ## ignore these folders
 irs990/*
